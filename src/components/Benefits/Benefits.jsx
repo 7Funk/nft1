@@ -1,7 +1,7 @@
 import React from "react";
 import styles from ".//Benefits.module.scss";
 
-export const Benefits = () => {
+const Benefits = () => {
   return (
     <div className={styles.benefits}>
       <div className={styles.benefitsContainer}>
@@ -9,7 +9,11 @@ export const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/dollarSign.svg" alt=""/>
+        <img
+          className={styles.imgBenefits}
+          src="/images/dollarSign.svg"
+          alt=""
+        />
         <p className={styles.textBenefits}>
           Meta Fluncer buyers will onetime get 5000 $ILONSI tokens and will
           receive 10 $ILONSI tokens daily automatically to their digital wallets
@@ -65,3 +69,4 @@ export const Benefits = () => {
     </div>
   );
 };
+export default Benefits;

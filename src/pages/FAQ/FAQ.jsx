@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Container } from "../../components/Container/Container";
-import { Header } from "../../components/Header/Header";
-import { Question } from "../../components/Question/Question";
+// import { Container } from "../../components/Container/Container";
+// import { Header } from "../../components/Header/Header";
+// import { Question } from "../../components/Question/Question";
+import { Question, Header, Container } from "../../components";
 import styles from "./FAQ.module.scss";
 
 const questions = [
