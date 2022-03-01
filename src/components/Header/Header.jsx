@@ -11,7 +11,7 @@ export const Header = () => {
         <a className={styles.link}>Contact </a>
         <a className={styles.link}> FAQ</a>
         <a className={styles.link}>Whitepaper</a>
-        <a className={styles.link}>CONNECT WALLET </a>
+        <button className={styles.button}>CONNECT WALLET {">"}</button>
     </header>
   )
 }

@@ -1,10 +1,10 @@
-.story {
-  background: #000;
-  .topStoryContainer {
+.benefits {
+  background-color: black;
+  .benefitsContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    .topStory {
+    .topBenefits {
       color: transparent;
       background: linear-gradient(90deg, #ff00e5 0%, #7000ff 100%);
       background-clip: text;
@@ -16,12 +16,15 @@
       display: inline-block;
     }
   }
-  .textStory {
+
+  .textBenefits {
     color: #fff;
     font-size: 36px;
-    text-align: center;
     padding: 76px;
     text-align: left;
     font-weight: bold;
+    .imgBenefits{
+        padding: 33px;
+    }
   }
 }
