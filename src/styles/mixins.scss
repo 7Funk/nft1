@@ -1,0 +1,12 @@
+@import './variables.scss';
+@mixin gradientText90deg {
+  background: $gradient90deg;
+  color: transparent;
+  background-clip: text;
+}
+@mixin gradientText180deg {
+  background: $gradient180deg;
+  color: transparent;
+  background-clip: text;
+  line-height: 184px;
+}

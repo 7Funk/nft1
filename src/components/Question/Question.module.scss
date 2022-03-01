@@ -1,6 +1,7 @@
+@import '../../styles/variables.scss';
 .question {
-  // border: 5px solid #ff00e5;
-  box-shadow: inset 0px 0px 0px 5px #ff00e5;
+  box-shadow: inset 0px 0px 0px 5px $gradientPink;
+  width: 100%;
   border-radius: 58px;
   padding: 54px 40px;
   box-sizing: border-box;
@@ -8,10 +9,8 @@
   cursor: pointer;
   background: transparent;
   position: relative;
-  // transition: all 0.5s ease-out;
-  // &:hover {
-  //   border: 5px solid transparent;
-  // }
+  z-index: 1;
+  margin-bottom: 144px;
 
   &::after {
     content: "";
@@ -19,20 +18,19 @@
     border-radius: 1px;
     top: 0;
     left: 0;
-    
+    z-index: -1;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #ff00e5 0%, #7000ff 100%);
-    z-index: -1;
+    background: $gradient180deg;
     opacity: 0;
 
-    transition: all 0.5s ease-out;
+    transition: all 0.25s ease-out;
   }
 
   &:hover::after {
     opacity: 100;
     
-    transition: all 0.5s ease-out;
+    transition: all 0.25s ease-out;
   }
 
   .content {
@@ -42,5 +40,6 @@
     font-weight: bold;
     font-size: 51px;
     text-align: center;
+    
   }
 }

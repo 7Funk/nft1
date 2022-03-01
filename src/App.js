@@ -1,9 +1,9 @@
-import { Question } from "./components/Question/Question";
+import FAQ  from "./pages/FAQ/FAQ";
 
 function App() {
   return (
     <div>
-      <Question answer='lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ' question='text' />
+      <FAQ/>
     </div>
   );
 }
