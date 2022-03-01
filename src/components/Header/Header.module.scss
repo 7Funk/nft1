@@ -1,3 +1,4 @@
+@import "../../styles/variables.scss";
 .header {
   background: #000;
   color: #fff;
@@ -19,7 +20,7 @@
       padding: 13px;
       border-radius: 20px;
       text-transform: uppercase;
-      background: linear-gradient(90deg, #ff00e5 0%, #7000ff 100%);
+      background: $gradient90deg;
       color:#fff;
   }
 }

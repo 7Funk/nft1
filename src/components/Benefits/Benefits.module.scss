@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .benefits {
   background-color: black;
   .benefitsContainer {
@@ -5,9 +7,7 @@
     justify-content: center;
     align-items: center;
     .topBenefits {
-      color: transparent;
-      background: linear-gradient(90deg, #ff00e5 0%, #7000ff 100%);
-      background-clip: text;
+      @include gradientText90deg;
       font-style: bold;
       font-size: 64px;
       line-height: 100%;

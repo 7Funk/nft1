@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .story {
   background: #000;
   .topStoryContainer {
@@ -5,9 +7,7 @@
     justify-content: center;
     align-items: center;
     .topStory {
-      color: transparent;
-      background: linear-gradient(90deg, #ff00e5 0%, #7000ff 100%);
-      background-clip: text;
+      @include gradientText90deg;
       font-style: bold;
       font-size: 64px;
       line-height: 100%;
@@ -19,7 +19,6 @@
   .textStory {
     color: #fff;
     font-size: 36px;
-    text-align: center;
     padding: 76px;
     text-align: left;
     font-weight: bold;
