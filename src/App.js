@@ -1,14 +1,9 @@
-import { Header } from "./components/Header/Header";
-import { Main } from "./pages/Main/Main";
-import { Story } from "./pages/Story/Story";
-
+import { Question } from "./components/Question/Question";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Main />
-      <Story />
+      <Question answer='lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ' question='text' />
     </div>
   );
 }
