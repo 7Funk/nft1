@@ -1,9 +1,16 @@
-import { Question } from "./components/Question/Question";
+import { Benefits } from "./components/Benefits/Benefits";
+import { Header } from "./components/Header/Header";
+import { Main } from "./pages/Main/Main";
+import { Story } from "./pages/Story/Story";
+
 
 function App() {
   return (
     <div>
-      <Question answer='lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ' question='text' />
+      <Header />
+      <Main />
+      <Story />
+      <Benefits />
     </div>
   );
 }
