@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from ".//Main.module.scss";
 
 const Main = () => {
@@ -9,6 +10,8 @@ const Main = () => {
         src="/images/shutterstock.png"
         alt="shutterstock"
       />
+      <img src="/images/rocket.svg" alt="rocket" />
+      <img src="/images/rocketback.svg" alt="" />
     </div>
   );
 };

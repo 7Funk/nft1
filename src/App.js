@@ -1,9 +1,17 @@
-import { FAQ } from "./pages/FAQ";
+import { Benefits, Header } from "./components";
+import { Eco } from "./components/Eco/Eco";
+import { Team } from "./components/Team/Team";
+import { Main, Story } from "./pages";
 
-const App = () => {
+function App() {
   return (
     <div>
-      <FAQ />
+      <Header />
+      <Main />
+      <Story />
+      <Benefits />
+      <Eco />
+      <Team />
     </div>
   );
 }
