@@ -19,7 +19,7 @@ export const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/poker.svg" alt="" />
         <p className={styles.textBenefits}>
           Meta Fluncer holders will have the opportunity to join presales and
           whitelist for various NFT projects, together with Influencers, this
@@ -29,7 +29,7 @@ export const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/party.svg" alt="" />
         <p className={styles.textBenefits}>
           NFT owners will be invited to parties and events for networking with
           brands, influencers and a lot of other interesting people.
@@ -37,7 +37,7 @@ export const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/doc.svg" alt="" />
         <p className={styles.textBenefits}>
           5% of all revenue ILONSI Shop makes will be divided evenly between
           1000 Meta Fluencer holders. Once a quarter, 5% of sales at the ILONSI
@@ -46,7 +46,7 @@ export const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/shop.svg" alt="" />
         <p className={styles.textBenefits}>
           Meta-Fluencer is a direct ticket into the ILONSI Shop, for brands and
           influencers wanting to be a part of our platform. Influencers and
@@ -56,7 +56,7 @@ export const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/copyrightSign.svg" alt="" />
         <p className={styles.textBenefits}>
           You own all rights attached to your Meta-Fluencer NFT, and these can
           never be revoked by ILONSI AB.
