@@ -1,44 +1,19 @@
+@import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
-.question {
-  box-shadow: inset 0px 0px 0px 5px $gradientPink;
-  width: 100%;
-  border-radius: 58px;
-  padding: 54px 40px;
-  box-sizing: border-box;
-  overflow: hidden;
-  cursor: pointer;
-  background: transparent;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 144px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    border-radius: 1px;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background: $gradient180deg;
-    opacity: 0;
+.container {
+  margin-bottom: 80px;
 
-    transition: all 0.25s ease-out;
-  }
-
-  &:hover::after {
-    opacity: 100;
-
-    transition: all 0.25s ease-out;
+  .heading {
+    @include gradientText90deg;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
   }
 
   .content {
-    color: white;
-    line-height: 69px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 51px;
-    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
