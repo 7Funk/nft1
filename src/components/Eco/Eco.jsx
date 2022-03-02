@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Eco = () => {
+const Eco = () => {
   return (
     <div>
       <div>
@@ -66,3 +66,4 @@ export const Eco = () => {
     </div>
   );
 };
+export default Eco;

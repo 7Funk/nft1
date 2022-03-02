@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Benefits, Eco, Story, Team } from "../../components";
 import styles from ".//Main.module.scss";
 
 const Main = () => {
@@ -12,7 +13,12 @@ const Main = () => {
       />
       <img src="/images/rocket.svg" alt="rocket" />
       <img src="/images/rocketback.svg" alt="" />
+      <Story />
+      <Benefits />
+      <Eco />
+      <Team />
     </div>
   );
 };
 export default Main;
+
