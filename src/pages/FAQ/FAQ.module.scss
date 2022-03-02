@@ -1,38 +1,51 @@
-@import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
-.page {
-  background: black;
-  padding-bottom: 25px;
-  .headingContainer {
-    width: 100%;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import "../../styles/variables.scss";
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 142px;
-      left: 48px;
-      width: 328px;
-      height: 286px;
-      background-image: url("../../../public/images/planet1.png");
+.page {
+  padding-bottom: 25px;
+  max-width: 1266px;
+  width: 100%;
+  margin: 140px auto;
+
+  .heading {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 76px;
+    margin-bottom: 40px;
+  }
+
+  .questionContainer {
+    position: relative;
+
+    .stickyBar {
+      top: 20px;
+      right: 0;
+      margin-left: auto;
+      position: -webkit-sticky;
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: fit-content;
+      height: 0;
+      font-weight: bold;
+      
+      .stickyBarLink {
+        text-decoration: none;
+        margin-bottom: 20px;
+
+        &:hover {
+          @include gradientText90deg;
+        }
+        &:active {
+          color: $gradientPurple;
+        }
+      }
     }
-    &::before {
-      content: "";
-      position: absolute;
-      top: 228px;
-      right: 97px;
-      width: 373px;
-      height: 249px;
-      z-index: 1;
-      background-image: url("../../../public/images/planet2.png");
-    }
-    .heading {
-      font-size: 196px;
-      @include gradientText180deg;
+
+    .questions {
+      max-width: 776px;
+      width: 100%;
     }
   }
 }

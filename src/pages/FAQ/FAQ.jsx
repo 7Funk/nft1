@@ -1,73 +1,58 @@
 import React, { useState } from "react";
-// import { Container } from "../../components/Container/Container";
-// import { Header } from "../../components/Header/Header";
-// import { Question } from "../../components/Question/Question";
-import { Question, Header, Container } from "../../components";
+
+import { Container, Header, Question } from "../../components";
 import styles from "./FAQ.module.scss";
 
 const questions = [
   {
     answer:
-      "A non-fungible Token (NFT) is a unique digital asset that represents real-world objects that range from music, and art, to videos, game items and digital rights.",
-    question: "What is an NFT",
+      "Meta-Fluencer NFT will donate 20% of all NFT sales and the second-hand royalty sales to support women and children who have experienced trauma, through various organizations. Meta-Fluncer and ILONSI believes that everyone can do something and will therefore take our responsibility to do our utmost for equal and a freer society",
+    question: "What Is An NFT?",
   },
   {
-    answer: "lorem ipsum",
-    question: "How do i buy a metafluencer",
+    answer:
+      "Meta-Fluencer NFT will donate 20% of all NFT sales and the second-hand royalty sales to support women and children who have experienced trauma, through various organizations. Meta-Fluncer and ILONSI believes that everyone can do something and will therefore take our responsibility to do our utmost for equal and a freer society",
+    question: "How Do I Buy A Metafluencer?",
   },
   {
-    answer: "lorem ipsum",
-    question: "How many metafluencers will be there",
+    answer:
+      "Meta-Fluencer NFT will donate 20% of all NFT sales and the second-hand royalty sales to support women and children who have experienced trauma, through various organizations. Meta-Fluncer and ILONSI believes that everyone can do something and will therefore take our responsibility to do our utmost for equal and a freer society",
+    question: "How Many Metafluencers Will Be There?",
   },
   {
-    answer: "lorem ipsum",
-    question: "Where can i buy and sell nfts",
-  },
-  {
-    answer: "lorem ipsum",
-    question: "What is an nft",
-  },
-  {
-    answer: "lorem ipsum",
-    question: "What is an nft",
-  },
-  {
-    answer: "lorem ipsum",
-    question: "What is an nft",
+    answer:
+      "Meta-Fluencer NFT will donate 20% of all NFT sales and the second-hand royalty sales to support women and children who have experienced trauma, through various organizations. Meta-Fluncer and ILONSI believes that everyone can do something and will therefore take our responsibility to do our utmost for equal and a freer society",
+    question: "Where Can  I Buy And Sell NFTS?",
   },
 ];
 
 const FAQ = () => {
-  const [questionOpen, setQuestionOpen] = useState(null);
-
-  const setOpenedQuestion = (id) => {
-    if (id === questionOpen) {
-      setQuestionOpen(null);
-    } else {
-      setQuestionOpen(id);
-    }
-  };
-
   return (
-    <div className={styles.page} style={{ background: "black" }}>
-      <Header />
-      <div className={styles.headingContainer}>
-        <h1 className={styles.heading}>FAQ</h1>
+    <div className={styles.page}>
+      <h1 className={styles.heading}>FAQ</h1>
+      <div className={styles.questionContainer}>
+        <div className={styles.stickyBar}>
+          {questions.map((el, i) => {
+            return (
+              <a className={styles.stickyBarLink} href={`#question${i}`}>
+                {el.question}
+              </a>
+            );
+          })}
+        </div>
+        <div className={styles.questions}>
+            {questions.map((el, i) => {
+              return (
+                <Question
+                  key={i}
+                  id={`question${i}`}
+                  question={el.question}
+                  answer={el.answer}
+                />
+              );
+            })}
+          </div>
       </div>
-      <Container>
-        {questions.map((el, i) => {
-          return (
-            <Question
-              key={i}
-              question={el.question}
-              answer={el.answer}
-              id={i}
-              isOpen={questionOpen === i}
-              setIsOpen={setOpenedQuestion}
-            />
-          );
-        })}
-      </Container>
     </div>
   );
 };

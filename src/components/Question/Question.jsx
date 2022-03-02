@@ -1,17 +1,17 @@
 import React from "react";
+
 import styles from "./Question.module.scss";
 
 const Question = ({
   question,
   answer,
-  isOpen,
-  setIsOpen,
   id,
   ...restprops
 }) => {
   return (
-    <div onClick={() => setIsOpen(id)} className={styles.question}>
-      <p className={styles.content}>{isOpen ? answer : question}</p>
+    <div id={id} className={styles.container}>
+      <h3 className={styles.heading}>{question}</h3>
+      <p className={styles.content}>{answer}</p>
     </div>
   );
 };
