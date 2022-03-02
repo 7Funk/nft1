@@ -28,7 +28,7 @@ const questions = [
 
 const FAQ = () => {
   return (
-    <div className={styles.page}>
+    <Container className={styles.page}>
       <h1 className={styles.heading}>FAQ</h1>
       <div className={styles.questionContainer}>
         <div className={styles.stickyBar}>
@@ -53,7 +53,7 @@ const FAQ = () => {
             })}
           </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

@@ -4,7 +4,7 @@ import styles from ".//Header.module.scss";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src="/images/headerLogo.png" alt="logo" />
+      <img src="/images/headerLogo.svg" alt="logo" />
       <a className={styles.link}>Story</a>
       <a className={styles.link}>Team</a>
       <a className={styles.link}>Auction</a>

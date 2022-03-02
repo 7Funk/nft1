@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Container.module.scss";
 
-const Container = ({ children }) => {
-  return <div className={styles.container}>{children}</div>;
+const Container = ({ children, className, ...resprops }) => {
+  return <div {...resprops} className={styles.container + `${className && ' ' + className}`}>{children}</div>;
 };
 export default Container;

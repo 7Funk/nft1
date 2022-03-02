@@ -1,0 +1,62 @@
+@import "../../styles/mixins.scss";
+.footer {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  .footerBlock {
+    .heading {
+      margin-bottom: 54px;
+    }
+    .logo {
+      width: 284px;
+    }
+
+    .containerLinks {
+      margin-bottom: 80px;
+      display: flex;
+    }
+
+    .wishes {
+      margin-bottom: 20px;
+    }
+
+    .rights {
+      opacity: 0.25;
+    }
+
+    .contact {
+      @include gradientText90deg;
+      display: inline-block;
+      font-weight: 800;
+      font-size: 32px;
+    }
+
+    .icons {
+      padding-top: 40px;
+    }
+  }
+  .linkBlock {
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-last-child(1) {
+      padding-right: 0;
+    }
+    .link {
+      margin-bottom: 20px;
+      text-decoration: none;
+
+      &:hover {
+        @include gradientText90deg;
+      }
+      &:active {
+        color: $gradientPurple;
+      }
+    }
+  }
+}
