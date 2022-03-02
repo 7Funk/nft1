@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 .question {
   box-shadow: inset 0px 0px 0px 5px $gradientPink;
   width: 100%;
@@ -29,7 +29,7 @@
 
   &:hover::after {
     opacity: 100;
-    
+
     transition: all 0.25s ease-out;
   }
 
@@ -40,6 +40,5 @@
     font-weight: bold;
     font-size: 51px;
     text-align: center;
-    
   }
 }
