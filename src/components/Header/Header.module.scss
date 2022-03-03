@@ -1,28 +1,62 @@
 @import "../../styles/variables.scss";
 
 .header {
-  background: #000;
   color: #fff;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 33px;
   margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 27px;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
   .link {
-    height: 27px;
-    font-weight: bold;
     font-size: 20px;
-    line-height: 32px;
-    color: #ffffff;
+    line-height: 25px;
+    color: #fff;
     white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
   }
   .button {
-    padding: 13px;
-    border-radius: 20px;
+    padding: 16px 48px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 50px;
     text-transform: uppercase;
     background: $gradient90deg;
     color: #fff;
+    z-index: 1;
+    position: relative;
+    border: none;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 57.38%;
+      bottom: 0%;
+      background: linear-gradient(98.01deg, #ff00e5 -1.14%, #7000ff 90.23%);
+      filter: blur(50px);
+      z-index: -1;
+    }
+
+    &:hover {
+      background: $gradientPink
+    }
+    &:active {
+      &::after {
+        content: none;
+      }
+    }
   }
 }
