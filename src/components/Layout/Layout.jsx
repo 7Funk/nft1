@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header } from '..'
+import { Footer, Header } from '..'
 import styles from './Layout.module.scss'
 
 const Layout = ({children}) => {
@@ -8,7 +8,7 @@ const Layout = ({children}) => {
     <div className={styles.layout}>
       <Header />
         {children}
-      {/* Footer */}
+      <Footer />
     </div>
   )
 }

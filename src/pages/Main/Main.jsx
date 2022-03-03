@@ -1,7 +1,12 @@
 import React from "react";
 
+<<<<<<< HEAD
 import { Benefits, Eco, Smartcontacts, Story, Team } from "../../components";
 import styles from ".//Main.module.scss";
+=======
+import { Benefits, Eco, Story, Team } from "../../components";
+import styles from "./Main.module.scss";
+>>>>>>> main
 
 const Main = () => {
   return (

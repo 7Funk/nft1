@@ -1,6 +1,10 @@
 import React from "react";
 
+<<<<<<< HEAD
 import styles from ".//Story.module.scss";
+=======
+import styles from "./Story.module.scss";
+>>>>>>> main
 
 const Story = () => {
   return (

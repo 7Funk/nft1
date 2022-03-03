@@ -3,8 +3,6 @@
 
 .page {
   padding-bottom: 25px;
-  max-width: 1266px;
-  width: 100%;
   margin: 140px auto;
 
   .heading {
@@ -20,6 +18,7 @@
     .stickyBar {
       top: 20px;
       right: 0;
+      float: right;
       margin-left: auto;
       position: -webkit-sticky;
       position: sticky;
@@ -27,7 +26,6 @@
       flex-direction: column;
       align-items: flex-end;
       width: fit-content;
-      height: 0;
       font-weight: bold;
       
       .stickyBarLink {
