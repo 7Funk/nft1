@@ -2,8 +2,6 @@
 @import "../../styles/variables.scss";
 
 .page {
-  padding-bottom: 25px;
-  padding: 140px 0;
 
   .heading {
     font-weight: 800;
@@ -16,7 +14,7 @@
     position: relative;
 
     .stickyBar {
-      top: 45px;
+      top: 90px;
       right: 0;
       float: right;
       margin-left: auto;

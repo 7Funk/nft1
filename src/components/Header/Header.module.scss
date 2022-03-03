@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .header {
   color: #fff;
@@ -23,6 +24,23 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
+    z-index: 1;
+    position: relative;
+    &:hover {
+      &::after {
+        content: ' ';
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        right: 0px;
+        background: $gradient90deg;
+      }
+    }
+    &:active {
+      @include gradientText90deg
+    }
   }
   .button {
     padding: 16px 48px;

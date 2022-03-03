@@ -35,6 +35,13 @@
 
     .icons {
       padding-top: 40px;
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+
+      .icon {
+        height: 16px;
+      }
     }
   }
   .linkBlock {

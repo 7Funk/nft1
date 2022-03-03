@@ -67,7 +67,20 @@ const Footer = () => {
               info@ilonsi.com
             </a>
           </div>
-          <div className={styles.icons}>todo</div>
+          <div className={styles.icons}>
+            <a href="#">
+              <img className={styles.icon} src="/images/tg.svg" alt="" />
+            </a>
+            <a href="#">
+              <img className={styles.icon} src="/images/dc.svg" alt="" />
+            </a>
+            <a href="#">
+              <img className={styles.icon} src="/images/tw.svg" alt="" />
+            </a>
+            <a href="#">
+              <img className={styles.icon} src="/images/insta.svg" alt="" />
+            </a>
+          </div>
         </div>
       </Container>
     </footer>

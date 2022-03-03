@@ -6,7 +6,7 @@ import styles from ".//Header.module.scss";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src="/images/headerLogo.svg" alt="logo" />
+      <Link to="/" className={styles.link}><img src="/images/headerLogo.svg" alt="logo" /></Link>
       <a className={styles.link} href="#story">Story</a>
       <a className={styles.link} >The MetaFluencer`s</a>
       <a className={styles.link} href="#benefits">Benefits</a>
