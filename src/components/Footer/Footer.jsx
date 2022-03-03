@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { Container } from "..";
 import styles from "./Footer.module.scss";
+
 const Footer = () => {
   return (
     <footer>
@@ -13,37 +16,37 @@ const Footer = () => {
           />
           <div className={styles.containerLinks}>
             <div className={styles.linkBlock}>
-              <a href="#" className={styles.link}>
+              <a className={styles.link} href="#story">
                 Story
               </a>
-              <a href="#" className={styles.link}>
+              <a className={styles.link} href="#metaFluencer">
                 The MetaFluencer`s
               </a>
-              <a href="#" className={styles.link}>
+              <a className={styles.link} href="#benefits">
                 Benefits
               </a>
             </div>
             <div className={styles.linkBlock}>
-              <a href="#" className={styles.link}>
+              <a className={styles.link} href="#eco">
                 Eco
               </a>
-              <a href="#" className={styles.link}>
+              <a className={styles.link} href="#team">
                 Team
               </a>
-              <a href="#" className={styles.link}>
-                Contracts{" "}
-              </a>
+              <Link className={styles.link} to="/contacts">
+                Contacts
+              </Link>
             </div>
             <div className={styles.linkBlock}>
-              <a href="#" className={styles.link}>
+              <a className={styles.link} href="#auction">
                 Auction
               </a>
-              <a href="#" className={styles.link}>
+              <a className={styles.link} href="#whitepaper">
                 Whitepaper
               </a>
-              <a href="#" className={styles.link}>
+              <Link className={styles.link} to="/faq">
                 FAQ
-              </a>
+              </Link>
             </div>
           </div>
           <p className={styles.wishes}>
