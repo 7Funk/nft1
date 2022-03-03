@@ -1,30 +1,13 @@
-import React from "react";
-import TextField from "@mui/material/TextField";
-import { Container } from "../../components";
-import styles from './Contacts.module.scss'
 import styled from "@emotion/styled";
+import TextField from "@mui/material/TextField";
+import React from "react";
 
-const CssTextField = styled(TextField)({
-  '&': {
-    border: '1px solid white',
-    color: 'white',
-  },
-  // '& label.Mui-focused': {
-  //   color: 'green',
-  // },
-  // '& .MuiInput-underline:after': {
-  //   borderBottomColor: 'green',
-  // },
-  '& .MuiOutlinedInput-root': {
-    '& fieldset': {
-      borderColor: 'red',
-    },
-    '&:hover fieldset': {
-      borderColor: 'yellow',
-    },
-    '&.Mui-focused fieldset': {
-      borderColor: 'green',
-    },
+import { Container } from "../../components";
+import styles from "./Contacts.module.scss";
+
+const CustomTextField = styled(TextField)({
+  '& label': {
+    color: 'gray',
   },
 });
 
@@ -33,11 +16,46 @@ const Contacts = () => {
     <Container className={styles.container}>
       <h1 className={styles.heading}>Contact Us</h1>
       <div className={styles.textFields}>
-        <CssTextField className={styles.textField} color="secondary" label="Your Name" required variant="outlined" />
-        <CssTextField className={styles.textField} color="secondary" label="Phone Number" required variant="outlined" />
-        <CssTextField className={styles.textField} color="secondary" label="Email Address" variant="outlined" />
+        <div className={styles.textFieldContainer}>
+          <p className={styles.fieldLabel}>Your Name*</p>
+          <CustomTextField
+            className={styles.textField}
+            color="secondary"
+            label="Your Name"
+            variant="filled"
+          />
+        </div>
+        <div className={styles.textFieldContainer}>
+          <p className={styles.fieldLabel}>Phone Number*</p>
+          <CustomTextField
+            className={styles.textField}
+            color="secondary"
+            label="Phone Number"
+            variant="filled"
+          />
+        </div>
+        <div className={styles.textFieldContainer}>
+          <p className={styles.fieldLabel}>Email Address</p>
+          <CustomTextField
+            className={styles.textField}
+            color="secondary"
+            label="Email Address"
+            variant="filled"
+          />
+        </div>
       </div>
-      <CssTextField color="secondary" fullwidth className={styles.textArea} multiline rows={6} />
+      <div style={{width: '100%'}} className={styles.textFieldContainer}>
+        <p className={styles.fieldLabel}>Your Message</p>
+        <CustomTextField
+          label="Your Message"
+          color="secondary"
+          variant="filled"
+          fullwidth
+          className={styles.textArea}
+          multiline
+          rows={6}
+        />
+      </div>
       <button className={styles.sendButton}>Send</button>
     </Container>
   );
