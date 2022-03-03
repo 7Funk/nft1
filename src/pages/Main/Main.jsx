@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Benefits, Eco, Story, Team } from "../../components";
-import styles from ".//Main.module.scss";
+import styles from "./Main.module.scss";
 
 const Main = () => {
   return (
