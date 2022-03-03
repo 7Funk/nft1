@@ -1,14 +1,11 @@
 import React from "react";
 
-<<<<<<< HEAD
-import styles from ".//Story.module.scss";
-=======
+import { Container } from "..";
 import styles from "./Story.module.scss";
->>>>>>> main
 
 const Story = () => {
   return (
-    <div className={styles.story} id="story">
+    <Container className={styles.story} id="story">
       <div className={styles.topStoryContainer}>
         <h2 className={styles.topStory}>The story</h2>
       </div>
@@ -29,7 +26,8 @@ const Story = () => {
         company, values equal rights, freedom and will always stand up against
         dark powers, regardless of what it costs them.
       </p>
-    </div>
+      <img className={styles.ship} src="images/ship.png" alt="" />
+    </Container>
   );
 };
 export default Story;

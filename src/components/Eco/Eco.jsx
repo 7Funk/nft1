@@ -1,12 +1,15 @@
 import React from "react";
 
+import { Container } from "..";
+import styles from "./Eco.module.scss";
+
 const Eco = () => {
   return (
-    <div>
+    <Container className="1">
       <div>
         <h2>Eco</h2>
       </div>
-      <div>
+      <div className={styles.card}>
         <div>
           <h3>META CHARITY</h3>
           <p>
@@ -63,7 +66,7 @@ const Eco = () => {
         </div>
         <img src="images/token.png" alt="" />
       </div>
-    </div>
+    </Container>
   );
 };
 export default Eco;

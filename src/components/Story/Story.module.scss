@@ -2,25 +2,32 @@
 
 .story {
   background: #000;
+  position: relative;
   .topStoryContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     .topStory {
-      @include gradientText90deg;
+      color: #fff;
       font-style: bold;
       font-size: 64px;
       line-height: 100%;
       padding-top: 169px;
-      text-transform: uppercase;
       display: inline-block;
     }
   }
   .textStory {
     color: #fff;
-    font-size: 36px;
+    font-size: 24px;
     padding: 76px;
     text-align: left;
     font-weight: bold;
+    width: 50%;
+  }
+  .ship{
+    position: absolute;
+    top: 310px;
+    right: -280px;
+    height: 510px;
   }
 }
