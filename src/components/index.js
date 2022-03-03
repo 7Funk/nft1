@@ -5,3 +5,5 @@ export { Question } from "./Question";
 export { Layout } from "./Layout";
 export { Footer } from "./Footer";
 export { Eco } from "./Eco";
+export { Story } from "./Story";
+export { Team } from "./Team";
