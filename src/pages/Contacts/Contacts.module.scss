@@ -1,0 +1,36 @@
+.container {
+  max-width: 938px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 140px auto;
+  .heading {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 76px;
+    margin-bottom: 40px;
+  }
+
+  .textFields {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .textField {
+      border: white;
+      color: white
+    }
+  }
+
+  .textArea {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .sendButton {
+    border-radius: 122px;
+    padding: 12px 20px;
+
+  }
+}
