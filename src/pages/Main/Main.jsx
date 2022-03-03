@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Benefits, Eco, Story, Team } from "../../components";
+import { Benefits, Eco, Smartcontacts, Story, Team } from "../../components";
 import styles from ".//Main.module.scss";
 
 const Main = () => {
@@ -17,6 +17,7 @@ const Main = () => {
       <Benefits />
       <Eco />
       <Team />
+      <Smartcontacts />
     </div>
   );
 };

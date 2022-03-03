@@ -6,3 +6,4 @@ export { Layout } from "./Layout";
 export { Story } from "./Story";
 export { Eco } from "./Eco";
 export { Team } from "./Team";
+export { Smartcontacts } from "./Smartcontacts";

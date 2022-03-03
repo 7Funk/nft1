@@ -1,0 +1,1 @@
+export { default as Smartcontacts } from "./Smartcontacts.jsx";

@@ -1,14 +1,15 @@
 import React from "react";
+import { Container } from "..";
 
 import styles from ".//Benefits.module.scss";
 
 const Benefits = () => {
   return (
-    <div className={styles.benefits}>
+    <Container className={styles.benefits} id="benefits">
       <div className={styles.benefitsContainer}>
         <h2 className={styles.topBenefits}>BENEFITS</h2>
       </div>
-
+<div className={styles.cardContainer}>
       <div className={styles.card}>
         <img className={styles.imgBenefits} src="/images/vector1.svg" alt="icon1"
         />
@@ -64,7 +65,8 @@ const Benefits = () => {
           never be revoked by ILONSI AB.
         </p>
       </div>
-    </div>
+      </div>
+    </Container>
   );
 };
 export default Benefits;

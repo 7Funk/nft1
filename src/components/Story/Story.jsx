@@ -1,9 +1,10 @@
 import React from "react";
+
 import styles from ".//Story.module.scss";
 
 const Story = () => {
   return (
-    <div className={styles.story}>
+    <div className={styles.story} id="story">
       <div className={styles.topStoryContainer}>
         <h2 className={styles.topStory}>The story</h2>
       </div>

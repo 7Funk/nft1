@@ -16,15 +16,27 @@
       display: inline-block;
     }
   }
+}
 
-  .textBenefits {
-    color: #fff;
-    font-size: 36px;
-    padding: 76px;
-    text-align: left;
-    font-weight: bold;
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .textBenefits {
+      color: #fff;
+      font-size: 36px;
+      text-align: left;
+      font-weight: bold;
+      padding: 81px;
+    }
     .imgBenefits {
-      padding: 33px;
+      width: 60px;
+      height: 60px;
+      padding: 40px;
     }
   }
 }
