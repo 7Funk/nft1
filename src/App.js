@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import { Layout } from "./components";
 
+import { Layout } from "./components";
 import { FAQ, Main } from "./pages";
 
-const App = () => {
+function App() {
   return (
     <Layout>
       <Routes>

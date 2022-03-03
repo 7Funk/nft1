@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from ".//Benefits.module.scss";
 
 const Benefits = () => {
@@ -9,10 +10,7 @@ const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img
-          className={styles.imgBenefits}
-          src="/images/dollarSign.svg"
-          alt=""
+        <img className={styles.imgBenefits} src="/images/vector1.svg" alt="icon1"
         />
         <p className={styles.textBenefits}>
           Meta Fluncer buyers will onetime get 5000 $ILONSI tokens and will
@@ -23,7 +21,7 @@ const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/vector2.svg" alt="icon2" />
         <p className={styles.textBenefits}>
           Meta Fluncer holders will have the opportunity to join presales and
           whitelist for various NFT projects, together with Influencers, this
@@ -33,7 +31,7 @@ const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/vector3.svg" alt="party" />
         <p className={styles.textBenefits}>
           NFT owners will be invited to parties and events for networking with
           brands, influencers and a lot of other interesting people.
@@ -41,7 +39,7 @@ const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/vector4.svg" alt="icon3" />
         <p className={styles.textBenefits}>
           5% of all revenue ILONSI Shop makes will be divided evenly between
           1000 Meta Fluencer holders. Once a quarter, 5% of sales at the ILONSI
@@ -50,7 +48,7 @@ const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/vector5.svg" alt="shop" />
         <p className={styles.textBenefits}>
           Meta-Fluencer is a direct ticket into the ILONSI Shop, for brands and
           influencers wanting to be a part of our platform. Influencers and
@@ -60,7 +58,7 @@ const Benefits = () => {
       </div>
 
       <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/" alt="" />
+        <img className={styles.imgBenefits} src="/images/vector6.svg" alt="copyright" />
         <p className={styles.textBenefits}>
           You own all rights attached to your Meta-Fluencer NFT, and these can
           never be revoked by ILONSI AB.
