@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nft1/static/css/main.6cf2f35b.css",
+    "main.js": "/nft1/static/js/main.407f4f93.js",
+    "static/media/Bg_blur.png": "/nft1/static/media/Bg_blur.a49fd683888fa1a1dfef.png",
+    "index.html": "/nft1/index.html",
+    "main.6cf2f35b.css.map": "/nft1/static/css/main.6cf2f35b.css.map",
+    "main.407f4f93.js.map": "/nft1/static/js/main.407f4f93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cf2f35b.css",
+    "static/js/main.407f4f93.js"
+  ]
+}
