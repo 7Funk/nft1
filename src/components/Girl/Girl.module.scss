@@ -1,0 +1,36 @@
+.container {
+  max-width: 1600px;
+  padding: 0 48px;
+  position: relative;
+  .girlImg {
+    width: 100%;
+  }
+  .rocket {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .rocketContainer {
+        position: relative;
+        z-index: 1;
+        &:after {
+          content: "";
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: linear-gradient(
+            165.28deg,
+            #ff00e5 -17.39%,
+            #5200ff 128.99%
+          );
+          opacity: 0.3;
+          filter: blur(20px);
+          z-index: -1;
+          position: absolute;
+        }
+      .rocketImg {
+
+      }
+    }
+  }
+}
