@@ -11,3 +11,4 @@ export { Smartcontacts } from "./Smartcontacts";
 export { Socials } from "./Socials";
 export { AuctionLot } from "./AuctionLot";
 export { LotModal } from "./LotModal";
+export { Girl } from "./Girl";

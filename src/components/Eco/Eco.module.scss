@@ -1,3 +1,36 @@
+@import "../../styles/mixins.scss";
+
 .card{
     display: flex;
+}
+
+.topEcoContainer{
+    display: flex;
+    .topEco{
+        color: #fff;
+        font-style: bold;
+        font-size: 60px;
+        line-height: 100%;
+        padding-top: 181px;
+        display: inline-block;
+        padding-bottom: 41px;
+    }
+    .textEco{
+        color: #fff;
+        font-size: 24px;
+        text-align: left;
+        font-weight: bold;
+        padding-right: 40px;
+    }
+}
+.topText{
+    font-size: 32px;
+    text-align: left;
+    @include gradientText90deg;
+    padding-bottom: 20px;
+}
+.ecoImg{
+    width: 776px;
+    padding-left: 40px;
+    padding-bottom: 40px;
 }

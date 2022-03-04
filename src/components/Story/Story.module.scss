@@ -1,7 +1,6 @@
 @import "../../styles/mixins.scss";
 
 .story {
-  background: #000;
   position: relative;
   .topStoryContainer {
     display: flex;
@@ -10,7 +9,7 @@
     .topStory {
       color: #fff;
       font-style: bold;
-      font-size: 64px;
+      font-size: 60px;
       line-height: 100%;
       padding-top: 169px;
       display: inline-block;
