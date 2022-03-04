@@ -1,10 +1,24 @@
 .layout {
   background-color: #000;
-
+  background: url('../../../public/images/Bg_blur.png') repeat-y;
+  background-size: cover;
   .content {
     padding: 120px 0;
     width: 100%;
-    background: url('../../../public/images/Bg_blur.png') repeat-y;
-    background-size: cover;
+  }
+  .footer{
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+      background: #000;
+      opacity: 0.55;
+      z-index: -1;
+    }
   }
 }
