@@ -6,8 +6,8 @@ import { Container } from "../../components";
 import styles from "./Contacts.module.scss";
 
 const CustomTextField = styled(TextField)({
-  '& label': {
-    color: 'gray',
+  "& label": {
+    color: "gray",
   },
 });
 
@@ -44,7 +44,7 @@ const Contacts = () => {
           />
         </div>
       </div>
-      <div style={{width: '100%'}} className={styles.textFieldContainer}>
+      <div style={{ width: "100%" }} className={styles.textFieldContainer}>
         <p className={styles.fieldLabel}>Your Message</p>
         <CustomTextField
           label="Your Message"
@@ -56,7 +56,9 @@ const Contacts = () => {
           rows={6}
         />
       </div>
-      <button className={styles.sendButton}>Send</button>
+      <div className={styles.containerButton}>
+        <button className={styles.button}>Send</button>
+      </div>
     </Container>
   );
 };

@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .heading {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 76px;
+    margin-bottom: 110px;
+  }
+  .lots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

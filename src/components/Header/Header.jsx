@@ -23,9 +23,9 @@ const Header = () => {
       <a className={styles.link} href="#team">
         Team
       </a>
-      <a className={styles.link} href="#auction">
+      <Link className={styles.link} to="/auction">
         Auction
-      </a>
+      </Link>
       <Link className={styles.link} to="/contacts">
         Contacts
       </Link>

@@ -9,3 +9,4 @@ export { Story } from "./Story";
 export { Team } from "./Team";
 export { Smartcontacts } from "./Smartcontacts";
 export { Socials } from "./Socials";
+export { AuctionLot } from "./AuctionLot";

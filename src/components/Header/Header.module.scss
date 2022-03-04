@@ -1,5 +1,5 @@
-@import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
 
 .header {
   color: #fff;
@@ -28,7 +28,7 @@
     position: relative;
     &:hover {
       &::after {
-        content: ' ';
+        content: " ";
         height: 2px;
         width: 100%;
         position: absolute;
@@ -39,7 +39,7 @@
       }
     }
     &:active {
-      @include gradientText90deg
+      @include gradientText90deg;
     }
   }
   .button {
@@ -57,19 +57,19 @@
     cursor: pointer;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0%;
       right: 0%;
-      top: 57.38%;
+      top: 72.38%;
       bottom: 0%;
       background: linear-gradient(98.01deg, #ff00e5 -1.14%, #7000ff 90.23%);
-      filter: blur(50px);
+      filter: blur(19px);
       z-index: -1;
     }
 
     &:hover {
-      background: $gradientPink
+      background: $gradientPink;
     }
     &:active {
       &::after {

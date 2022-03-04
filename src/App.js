@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import { Layout } from "./components";
-import { Contacts, FAQ, Main } from "./pages";
+import { Auction, Contacts, FAQ, Main } from "./pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/auction" element={<Auction />} />
       </Routes>
     </Layout>
   );
