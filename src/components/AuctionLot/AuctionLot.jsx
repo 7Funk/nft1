@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./AuctionLot.module.scss";
 
-const AuctionLot = () => {
+const AuctionLot = ({handleOpen}) => {
   return (
     <div className={styles.container}>
       <img className={styles.lotImage} src="/images/LotImage.png" alt="lot" />
@@ -15,7 +15,7 @@ const AuctionLot = () => {
         <p className={styles.lotPrice}>
           100 $ILONSI
         </p>
-        <button className={styles.button}>Bid</button>
+        <button onClick={handleOpen} className={styles.button}>Bid</button>
         
       </div>
     </div>

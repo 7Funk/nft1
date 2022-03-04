@@ -1,17 +1,18 @@
 @import "../../styles/mixins.scss";
 .container {
   display: flex;
-  padding: 40px 10px;
+  padding: 0 10px 40px 10px;
   box-sizing: border-box;
   position: relative;
+  z-index: 1;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
-    left: 0%;
-    right: 0%;
-    bottom: 99.73%;
-    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
 
     background: linear-gradient(
       92.19deg,
@@ -22,12 +23,12 @@
     );
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 99.73%;
-    bottom: 0%;
+    left: 0;
+    right: 0;
+    top: 1px;
+    height: 1px;
 
     background: linear-gradient(
       92.19deg,

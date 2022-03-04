@@ -10,3 +10,4 @@ export { Team } from "./Team";
 export { Smartcontacts } from "./Smartcontacts";
 export { Socials } from "./Socials";
 export { AuctionLot } from "./AuctionLot";
+export { LotModal } from "./LotModal";
