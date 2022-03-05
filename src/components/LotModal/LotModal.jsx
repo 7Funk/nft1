@@ -6,7 +6,7 @@ const LotModal = ({ isOpen, onClose }) => {
   return (
     <Dialog maxWidth='md' fullWidth scroll="body" open={isOpen} onClose={onClose}>
       <Box className={styles.modal}>
-        <img className={styles.cross} src="/images/cross.svg" alt="lot" />
+        <img onClick={onClose} className={styles.cross} src="/images/cross.svg" alt="lot" />
         <h3 className={styles.heading}>
           METAFLUENCER <br /> #0001
         </h3>

@@ -1,32 +1,74 @@
 @import "../../styles/mixins.scss";
 
-.story {
-  position: relative;
-  .topStoryContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .topStory {
-      color: #fff;
-      font-style: bold;
-      font-size: 60px;
-      line-height: 100%;
-      padding-top: 169px;
-      display: inline-block;
+.container {
+  background-image: url("../../../public/images/Stars.svg");
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  max-width: 1700px;
+
+  .story {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 3px;
+      height: 1px;
+
+      background: linear-gradient(
+        92.19deg,
+        rgba(255, 0, 229, 0) 2.62%,
+        #ff00e5 38.55%,
+        #7000ff 59.71%,
+        rgba(112, 0, 255, 0) 97.11%
+      );
     }
-  }
-  .textStory {
-    color: #fff;
-    font-size: 24px;
-    padding: 76px;
-    text-align: left;
-    font-weight: bold;
-    width: 50%;
-  }
-  .ship{
-    position: absolute;
-    top: 290px;
-    right: -290px;
-    height: 510px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 1px;
+      height: 1px;
+
+      background: linear-gradient(
+        92.19deg,
+        rgba(255, 0, 229, 0) 2.62%,
+        #ff00e5 38.55%,
+        #7000ff 59.71%,
+        rgba(112, 0, 255, 0) 97.11%
+      );
+    }
+    .topStoryContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .topStory {
+        color: #fff;
+        font-style: bold;
+        font-size: 60px;
+        line-height: 100%;
+        padding-top: 40px;
+        display: inline-block;
+      }
+    }
+    .textStory {
+      color: #fff;
+      font-size: 24px;
+      padding: 40px;
+      text-align: left;
+      font-weight: bold;
+      width: 50%;
+      z-index: 1;
+    }
+    .ship {
+      position: absolute;
+      top: 50px;
+      right: -150px;
+      height: 510px;
+      z-index: -1;
+    }
   }
 }
