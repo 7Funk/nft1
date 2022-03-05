@@ -26,12 +26,17 @@ const Socials = () => {
           </a>
         </div>
         <div className={styles.rrocket}>
-          <a className={styles.download}>Download whitepaper</a>
+          <a href="#" className={styles.download}>Download whitepaper</a>
           <div className={styles.rocket45}>
             <div className={styles.rocketContainer}>
               <img
                 className={styles.rocketImg}
                 src="/images/rocket45.svg"
+                alt=""
+              />
+              <img
+                className={styles.rocketPinkImg}
+                src="/images/PinkRocket.svg"
                 alt=""
               />
             </div>

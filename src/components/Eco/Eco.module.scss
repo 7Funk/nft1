@@ -1,53 +1,58 @@
 @import "../../styles/mixins.scss";
 
-.card {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
+.container {
+  background-image: url("../../../public/images/Stars.svg");
+  background-size: cover;
 
-  .textContainer {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .textContainer {
       max-width: 450px;
       padding-right: 40px;
-    .topText {
-      font-size: 32px;
-      text-align: left;
-      @include gradientText90deg;
-      padding-bottom: 20px;
+      .topText {
+        font-size: 32px;
+        text-align: left;
+        @include gradientText90deg;
+        padding-bottom: 20px;
+      }
+
+      .textEco {
+        color: #fff;
+        text-align: left;
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
 
-    .textEco {
-      color: #fff;
-      text-align: left;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 30px;
-    }
-  }
+    .containerImg {
+      flex-grow: 1;
+      // width: 760px;
+      overflow: hidden;
+      border-radius: 40px;
+      .ecoImg {
+        width: 100%;
+        transition: all 1s ease-out;
 
-  .containerImg {
-    width: 760px;
-    overflow: hidden;
-    border-radius: 40px;
-    .ecoImg {
-      width: 100%;
-      transition: all 1s ease-out;
-
-      &:hover {
-        transform: scale(1.1);
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
-}
 
-.topEcoContainer {
-  display: flex;
-  .topEco {
-    color: #fff;
-    font-style: bold;
-    font-size: 60px;
-    line-height: 100%;
-    padding-top: 181px;
-    display: inline-block;
-    padding-bottom: 41px;
+  .topEcoContainer {
+    display: flex;
+    .topEco {
+      color: #fff;
+      font-style: bold;
+      font-size: 60px;
+      line-height: 100%;
+      padding-top: 181px;
+      display: inline-block;
+      padding-bottom: 41px;
+    }
   }
 }

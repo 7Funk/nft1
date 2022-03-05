@@ -5,83 +5,123 @@ import styles from "./Team.module.scss";
 
 const Team = () => {
   return (
-    <Container>
+    <Container className={styles.container}>
       <div className={styles.teamContainer}>
         <h2 className={styles.topTeam}>Team</h2>
       </div>
       <div className={styles.teamWrapper}>
         <div className={styles.teamCardContainer}>
-          <img className={styles.ava} src="images/ava.png" alt="ava" />
+          <div className={styles.avaContainer}>
+            <img className={styles.ava} src="images/ava.png" alt="ava" />
+          </div>
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img className={styles.icon} src="images/twitter.svg" alt="twitter" />
+            <img
+              className={styles.icon}
+              src="images/twitter.svg"
+              alt="twitter"
+            />
             <img className={styles.icon} src="images/inst.svg" alt="inst" />
             <img className={styles.icon} src="images/in.svg" alt="in" />
           </div>
         </div>
         <div className={styles.teamCardContainer}>
-          <img className={styles.ava} src="images/ava.png" alt="ava" />
+          <div className={styles.avaContainer}>
+            <img className={styles.ava} src="images/ava.png" alt="ava" />
+          </div>
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-          <img className={styles.icon} src="images/twitter.svg" alt="twitter" />
-          <img className={styles.icon} src="images/inst.svg" alt="inst" />
+            <img
+              className={styles.icon}
+              src="images/twitter.svg"
+              alt="twitter"
+            />
+            <img className={styles.icon} src="images/inst.svg" alt="inst" />
           </div>
         </div>
         <div className={styles.teamCardContainer}>
-          <img className={styles.ava} src="images/ava.png" alt="ava" />
+          <div className={styles.avaContainer}>
+            <img className={styles.ava} src="images/ava.png" alt="ava" />
+          </div>
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-          <img className={styles.icon} src="images/twitter.svg" alt="twitter" />
-          <img className={styles.icon} src="images/inst.svg" alt="inst" />
-          <img className={styles.icon} src="images/in.svg" alt="in" />
+            <img
+              className={styles.icon}
+              src="images/twitter.svg"
+              alt="twitter"
+            />
+            <img className={styles.icon} src="images/inst.svg" alt="inst" />
+            <img className={styles.icon} src="images/in.svg" alt="in" />
           </div>
         </div>
         <div className={styles.teamCardContainer}>
-          <img className={styles.ava} src="images/ava.png" alt="ava" />
+          <div className={styles.avaContainer}>
+            <img className={styles.ava} src="images/ava.png" alt="ava" />
+          </div>
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-          <img className={styles.icon} src="images/in.svg" alt="in" />
+            <img className={styles.icon} src="images/in.svg" alt="in" />
           </div>
         </div>
         <div className={styles.teamCardContainer}>
-          <img className={styles.ava} src="images/ava.png" alt="ava" />
+          <div className={styles.avaContainer}>
+            <img className={styles.ava} src="images/ava.png" alt="ava" />
+          </div>
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-          <img className={styles.icon} src="images/twitter.svg" alt="twitter" />
-          <img className={styles.icon} src="images/inst.svg" alt="inst" />
-          <img className={styles.icon} src="images/in.svg" alt="in" />
+            <img
+              className={styles.icon}
+              src="images/twitter.svg"
+              alt="twitter"
+            />
+            <img className={styles.icon} src="images/inst.svg" alt="inst" />
+            <img className={styles.icon} src="images/in.svg" alt="in" />
           </div>
         </div>
         <div className={styles.teamCardContainer}>
-          <img className={styles.ava} src="images/ava.png" alt="ava" />
+          <div className={styles.avaContainer}>
+            <img className={styles.ava} src="images/ava.png" alt="ava" />
+          </div>
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-          <img className={styles.icon} src="images/twitter.svg" alt="twitter" />
-          <img className={styles.icon} src="images/inst.svg" alt="inst" />
-          <img className={styles.icon} src="images/in.svg" alt="in" />
+            <img
+              className={styles.icon}
+              src="images/twitter.svg"
+              alt="twitter"
+            />
+            <img className={styles.icon} src="images/inst.svg" alt="inst" />
+            <img className={styles.icon} src="images/in.svg" alt="in" />
           </div>
         </div>
         <div className={styles.teamCardContainer}>
-          <img className={styles.ava} src="images/ava.png" alt="ava" />
+          <div className={styles.avaContainer}>
+            <img className={styles.ava} src="images/ava.png" alt="ava" />
+          </div>
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-          <img className={styles.icon} src="images/twitter.svg" alt="twitter" />
-          <img className={styles.icon} src="images/inst.svg" alt="inst" />
+            <img
+              className={styles.icon}
+              src="images/twitter.svg"
+              alt="twitter"
+            />
+            <img className={styles.icon} src="images/inst.svg" alt="inst" />
           </div>
         </div>
         <div className={styles.teamCardContainer}>
-          <img className={styles.ava} src="images/ava.png" alt="ava" />
+          <div className={styles.avaContainer}>
+            <img className={styles.ava} src="images/ava.png" alt="ava" />
+          </div>
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-          <img className={styles.icon} src="images/in.svg" alt="in" />
+            <img className={styles.icon} src="images/in.svg" alt="in" />
           </div>
         </div>
       </div>

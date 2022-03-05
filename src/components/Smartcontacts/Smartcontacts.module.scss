@@ -21,28 +21,43 @@
   width: 100%;
   justify-content: space-between;
   .contactCard {
-    $width: calc(100%-40px*4);
-    background: #141025;
-    border: 1px solid #fff;
-    padding: 40px 0;
-    box-sizing: border-box;
-    margin: 0 20px;
-    width: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 2px 2px 2px;
+    background: linear-gradient(135deg, #fff 0%, #000 100%);
     border-radius: 20px;
-    .card {
+    max-width: 300px;
+    width: 100%;
 
-      margin: 0 auto;
+    &:hover {
+      background: linear-gradient(45deg, #fff 0%, #000 100%);
+    }
+    .card {
+      background: #120d18;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 50px 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
+      
+      border-radius: 20px;
       .logo {
+        width: 60px;
+        height: 60px;
         padding-bottom: 20px;
       }
       .name {
+        width: 206px;
         padding-bottom: 40px;
         text-align: center;
         font-size: 32px;
+        font-weight: 800;
+        line-height: 40px;
+        white-space: nowrap;
+        
       }
       .button {
         padding: 16px 48px;
