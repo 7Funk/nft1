@@ -1,0 +1,83 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.smartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .topSmart {
+    color: #fff;
+    font-style: bold;
+    font-size: 60px;
+    line-height: 100%;
+    padding-top: 140px;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+}
+.contactCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  .contactCard {
+    $width: calc(100%-40px*4);
+    background: #141025;
+    border: 1px solid #fff;
+    padding: 40px 0;
+    box-sizing: border-box;
+    margin: 0 20px;
+    width: 21%;
+    border-radius: 20px;
+    .card {
+
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .logo {
+        padding-bottom: 20px;
+      }
+      .name {
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 32px;
+      }
+      .button {
+        padding: 16px 48px;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 24px;
+        border-radius: 50px;
+        background: $gradient90deg;
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        border: none;
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0%;
+          right: 0%;
+          top: 72.38%;
+          bottom: 0%;
+          background: linear-gradient(98.01deg, #ff00e5 -1.14%, #7000ff 90.23%);
+          filter: blur(19px);
+          z-index: -1;
+        }
+
+        &:hover {
+          background: $gradientPink;
+        }
+        &:active {
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

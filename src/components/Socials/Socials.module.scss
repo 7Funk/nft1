@@ -1,0 +1,74 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .topSocials {
+    color: #fff;
+    font-style: bold;
+    font-size: 60px;
+    line-height: 100%;
+    padding-top: 140px;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+}
+
+.pena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  .textSocials {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .socialsImg {
+    padding-bottom: 30px;
+    .icon {
+      padding: 0 21.5px;
+    }
+  }
+  .download {
+    font-size: 32px;
+    text-decoration: underline;
+    @include gradientText180deg;
+    font-weight: 800;
+  }
+  .rrocket{
+      display: flex;
+      align-items: center;
+  .rocket45 {
+      padding-left: 35px;
+    .rocketContainer {
+        position: relative;
+        z-index: 1;
+        &:after {
+          content: "";
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: linear-gradient(
+            165.28deg,
+            #ff00e5 -17.39%,
+            #5200ff 128.99%
+          );
+          opacity: 0.3;
+          filter: blur(20px);
+          z-index: -1;
+          position: absolute;
+        }
+      .rocketImg {
+
+      }
+    }
+  }
+}
+}
+
+
