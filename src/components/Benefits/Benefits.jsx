@@ -20,7 +20,14 @@ const Benefits = () => {
           platforms where you can buy and sell tokens.
         </p>
       </div>
-
+      <div className={styles.card}>
+        <img className={styles.imgBenefits} src="/images/vector4.svg" alt="icon3" />
+        <p className={styles.textBenefits}>
+          5% of all revenue ILONSI Shop makes will be divided evenly between
+          1000 Meta Fluencer holders. Once a quarter, 5% of sales at the ILONSI
+          Shop will be distributed to Meta Fluncer holders.
+        </p>
+      </div>
       <div className={styles.card}>
         <img className={styles.imgBenefits} src="/images/vector2.svg" alt="icon2" />
         <p className={styles.textBenefits}>
@@ -28,23 +35,6 @@ const Benefits = () => {
           whitelist for various NFT projects, together with Influencers, this
           will provide the NFT owner commission on everything the influencer
           sells in their ILONSI Shop for the NFT owner.
-        </p>
-      </div>
-
-      <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/vector3.svg" alt="party" />
-        <p className={styles.textBenefits}>
-          NFT owners will be invited to parties and events for networking with
-          brands, influencers and a lot of other interesting people.
-        </p>
-      </div>
-
-      <div className={styles.card}>
-        <img className={styles.imgBenefits} src="/images/vector4.svg" alt="icon3" />
-        <p className={styles.textBenefits}>
-          5% of all revenue ILONSI Shop makes will be divided evenly between
-          1000 Meta Fluencer holders. Once a quarter, 5% of sales at the ILONSI
-          Shop will be distributed to Meta Fluncer holders.
         </p>
       </div>
 
@@ -57,6 +47,16 @@ const Benefits = () => {
           or for available features.
         </p>
       </div>
+
+      <div className={styles.card}>
+        <img className={styles.imgBenefits} src="/images/vector3.svg" alt="party" />
+        <p className={styles.textBenefits}>
+          NFT owners will be invited to parties and events for networking with
+          brands, influencers and a lot of other interesting people.
+        </p>
+      </div>
+
+
 
       <div className={styles.card}>
         <img className={styles.imgBenefits} src="/images/vector6.svg" alt="copyright" />

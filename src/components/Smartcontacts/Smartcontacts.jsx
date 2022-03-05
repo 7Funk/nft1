@@ -1,34 +1,45 @@
 import React from "react";
+import { Container } from "../Container";
 
 import styles from "./Smartcontacts.module.scss";
 
 const Smartcontacts = () => {
   return (
-    <div className="contacts"> 
-      <div>
-        <h2>ILONSI’s Smart Contracts</h2>
+    <Container>
+      <div className={styles.smartContainer}>
+        <h2 className={styles.topSmart}>ILONSI’s Smart Contracts</h2>
       </div>
-      <div>
-        <img src="/images/founderlogo.svg" alt="" />
-        <h3>Founder</h3>
-        <button className={styles.button}>fly</button>
+      <div className={styles.contactCardContainer}>
+        <div className={styles.contactCard}>
+          <div className={styles.card}>
+          <img className={styles.logo} src="/images/founderlogo.svg" alt="" />
+          <h3 className={styles.name} >Founder</h3>
+          <button className={styles.button}>Fly</button>
+          </div>
+        </div>
+        <div className={styles.contactCard}>
+        <div className={styles.card}>
+          <img className={styles.logo} src="/images/rariblelogo.svg" alt="" />
+          <h3 className={styles.name}>Rarible</h3>
+          <button className={styles.button}>Fly</button>
+          </div>
+        </div>
+        <div className={styles.contactCard}>
+        <div className={styles.card}>
+          <img className={styles.logo} src="/images/tokenlogo.svg" alt="" />
+          <h3 className={styles.name}>ILONSI Token</h3>
+          <button className={styles.button}>Fly</button>
+          </div>
+        </div>
+        <div className={styles.contactCard}>
+        <div className={styles.card}>
+          <img className={styles.logo} src="/images/binancelogo.svg" alt="" />
+          <h3 className={styles.name}>Binance</h3>
+          <button className={styles.button}>Fly</button>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="/images/rariblelogo.svg" alt="" />
-        <h3>Rarible</h3>
-        <button className={styles.button}>fly</button>
-      </div>
-      <div>
-        <img src="/images/tokenlogo.svg" alt="" />
-        <h3>ILONSI Token</h3>
-        <button className={styles.button}>fly</button>
-      </div>
-      <div>
-        <img src="/images/binancelogo.svg" alt="" />
-        <h3>Binance</h3>
-        <button className={styles.button}>fly</button>
-      </div>
-    </div>
+    </Container>
   );
 };
 export default Smartcontacts;
