@@ -1,13 +1,12 @@
 import React from "react";
 
-import { Contacts } from "..";
-import { Benefits, Eco, Girl, Smartcontacts, Socials, Story, Team } from "../../components";
-import styles from ".//Main.module.scss";
+import { Benefits, Eco, Fluensers, Girl, Smartcontacts, Socials, Story, Team } from "../../components";
 
 const Main = () => {
   return (
     <div>
       <Girl />
+      <Fluensers />
       <Story />
       <Benefits />
       <Eco />
@@ -18,4 +17,3 @@ const Main = () => {
   );
 };
 export default Main;
-

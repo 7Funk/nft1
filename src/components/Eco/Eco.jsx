@@ -10,7 +10,7 @@ const Eco = () => {
         <h2 className={styles.topEco}>Eco</h2>
       </div>
       <div className={styles.card}>
-        <div>
+        <div className={styles.textContainer}>
           <h3 className={styles.topText}>META CHARITY</h3>
           <p className={styles.textEco}>
             Meta-Fluencer NFT will donate 20% of all NFT sales and the
@@ -21,10 +21,12 @@ const Eco = () => {
             society
           </p>
         </div>
-        <img className={styles.ecoImg} src="images/arms.png" alt="" />
+        <div className={styles.containerImg}>
+          <img className={styles.ecoImg} src="images/arms.png" alt="" />
+        </div>
       </div>
       <div className={styles.card}>
-        <div>
+        <div className={styles.textContainer}>
           <h3 className={styles.topText}>RENTING SYSTEM</h3>
           <p className={styles.textEco}>
             Meta-Fluencer NFT will donate 20% of all NFT sales and the
@@ -35,10 +37,12 @@ const Eco = () => {
             society
           </p>
         </div>
-        <img className={styles.ecoImg} src="images/rent.png" alt="" />
+        <div className={styles.containerImg}>
+          <img className={styles.ecoImg} src="images/rent.png" alt="" />
+        </div>
       </div>
       <div className={styles.card}>
-        <div>
+        <div className={styles.textContainer}>
           <h3 className={styles.topText}>$ILONSI SHOP</h3>
           <p className={styles.textEco}>
             Meta-Fluencer NFT will donate 20% of all NFT sales and the
@@ -49,10 +53,12 @@ const Eco = () => {
             society
           </p>
         </div>
-        <img className={styles.ecoImg} src="images/door.png" alt="" />
+        <div className={styles.containerImg}>
+          <img className={styles.ecoImg} src="images/door.png" alt="" />
+        </div>
       </div>
       <div className={styles.card}>
-        <div>
+        <div className={styles.textContainer}>
           <h3 className={styles.topText}>$ILONSI TOKEN</h3>
           <p className={styles.textEco}>
             Will be launched later and will be part of ILONSI Shop and Meta
@@ -64,7 +70,9 @@ const Eco = () => {
             prices.
           </p>
         </div>
-        <img className={styles.ecoImg} src="images/token.png" alt="" />
+        <div className={styles.containerImg}>
+          <img className={styles.ecoImg} src="images/token.png" alt="" />
+        </div>
       </div>
     </Container>
   );

@@ -1,0 +1,127 @@
+.container {
+  max-width: 1700px;
+  position: relative;
+  padding: 30px;
+
+  .topFluensersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .topFluensers {
+      color: #fff;
+      font-style: bold;
+      font-size: 60px;
+      line-height: 100%;
+      padding-top: 124px;
+      padding-bottom: 40px;
+      display: inline-block;
+    }
+  }
+  .containerImage {
+    display: flex !important;
+    justify-content: center;
+
+    .image {
+      height: 450px;
+    }
+  }
+
+  .center {
+    // transform: scale(1.2)
+  }
+
+  .prevArrow {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    transform: translate(-50);
+    margin-left: 45%;
+    z-index: 1;
+    &:hover {
+      .rocketContainerPrev {
+        right: 30px;
+      }
+    }
+    &:active {
+      .rocketContainerPrev {
+        &:after {
+          content: none
+        }
+      }
+    }
+  }
+  .nextArrow {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    transform: translate(-50);
+    margin-right: 45%;
+    z-index: 1;
+    &:hover {
+      .rocketContainerNext {
+        left: 30px;
+      }
+    }
+    &:active {
+      .rocketContainerNext {
+        &:after {
+          content: none
+        }
+      }
+    }
+  }
+  .rocket {
+    width: 48px;
+    height: 48px;
+    position: relative;
+
+    .circleContainer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      .circleImg {
+      }
+    }
+    .rocketContainer {
+      transform: scale(0.7);
+      transition: all 0.5s ease-out;
+      z-index: 1;
+      position: absolute;
+      &:after {
+        content: "";
+        top: 7px;
+        left: 4px;
+        height: 34px;
+        width: 34px;
+        background: linear-gradient(
+          165.28deg,
+          #ff00e5 -17.39%,
+          #5200ff 128.99%
+        );
+        filter: blur(20px);
+        z-index: -1;
+        position: absolute;
+      }
+    }
+    .rocketContainerNext {
+      left: 0px;
+      transition: all 0.5s ease-out;
+      .rocketImgNext {
+        transform: rotate(270deg);
+      }
+    }
+    .rocketContainerPrev {
+      right: 0px;
+      transition: all 0.5s ease-out;
+      .rocketImgPrev {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
