@@ -97,7 +97,7 @@ const BidContext = ({ onClose, setContext }) => {
           onClick={onClose}
           className={styles.cross}
           src="/images/Close.svg"
-          alt="cros"
+          alt="cross"
         />
       </div>
       <div className={styles.containerBid}>
@@ -173,7 +173,7 @@ const SubmitContext = ({ onClose }) => {
         onClick={onClose}
         className={styles.cross}
         src="/images/Close.svg"
-        alt="cros"
+        alt="cross"
       />
       <div className={styles.containerSubmit}>
         <h3 className={styles.heading}>100 $ILONSI</h3>

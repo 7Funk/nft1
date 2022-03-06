@@ -22,7 +22,7 @@ const Eco = () => {
           </p>
         </div>
         <div className={styles.containerImg}>
-          <img className={styles.ecoImg} src="images/arms.png" alt="" />
+          <img className={styles.ecoImg} src="images/arms.png" alt="icon" />
         </div>
       </div>
       <div className={styles.card}>
@@ -38,7 +38,7 @@ const Eco = () => {
           </p>
         </div>
         <div className={styles.containerImg}>
-          <img className={styles.ecoImg} src="images/rent.png" alt="" />
+          <img className={styles.ecoImg} src="images/rent.png" alt="icon" />
         </div>
       </div>
       <div className={styles.card}>
@@ -54,7 +54,7 @@ const Eco = () => {
           </p>
         </div>
         <div className={styles.containerImg}>
-          <img className={styles.ecoImg} src="images/door.png" alt="" />
+          <img className={styles.ecoImg} src="images/door.png" alt="icon" />
         </div>
       </div>
       <div className={styles.card}>
@@ -71,7 +71,7 @@ const Eco = () => {
           </p>
         </div>
         <div className={styles.containerImg}>
-          <img className={styles.ecoImg} src="images/token.png" alt="" />
+          <img className={styles.ecoImg} src="images/token.png" alt="icon" />
         </div>
       </div>
     </Container>

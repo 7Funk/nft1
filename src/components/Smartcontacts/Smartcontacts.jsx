@@ -12,28 +12,28 @@ const Smartcontacts = () => {
       <div className={styles.contactCardContainer}>
         <div className={styles.contactCard}>
           <div className={styles.card}>
-            <img className={styles.logo} src="/images/founderlogo.svg" alt="" />
+            <img className={styles.logo} src="/images/founderlogo.svg" alt="logo" />
             <h3 className={styles.name}>Founder</h3>
             <button className={styles.button}>Fly</button>
           </div>
         </div>
         <div className={styles.contactCard}>
           <div className={styles.card}>
-            <img className={styles.logo} src="/images/rariblelogo.svg" alt="" />
+            <img className={styles.logo} src="/images/rariblelogo.svg" alt="logo" />
             <h3 className={styles.name}>Rarible</h3>
             <button className={styles.button}>Fly</button>
           </div>
         </div>
         <div className={styles.contactCard}>
           <div className={styles.card}>
-            <img className={styles.logo} src="/images/tokenlogo.svg" alt="" />
+            <img className={styles.logo} src="/images/tokenlogo.svg" alt="logo" />
             <h3 className={styles.name}>ILONSI Token</h3>
             <button className={styles.button}>Fly</button>
           </div>
         </div>
         <div className={styles.contactCard}>
           <div className={styles.card}>
-            <img className={styles.logo} src="/images/binancelogo.svg" alt="" />
+            <img className={styles.logo} src="/images/binancelogo.svg" alt="logo" />
             <h3 className={styles.name}>Binance</h3>
             <button className={styles.button}>Fly</button>
           </div>

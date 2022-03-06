@@ -13,7 +13,7 @@ function SampleNextArrow(props) {
     <div className={styles.nextArrow} onClick={onClick}>
       <div className={styles.rocket}>
         <div className={styles.circleContainer}>
-          <img className={styles.circleImg} src="/images/circle.svg" alt="" />
+          <img className={styles.circleImg} src="/images/circle.svg" alt="circle" />
         </div>
         <div
           className={styles.rocketContainer + " " + styles.rocketContainerNext}
@@ -21,7 +21,7 @@ function SampleNextArrow(props) {
           <img
             className={styles.rocketImgNext}
             src="/images/rocket.svg"
-            alt=""
+            alt="rocket"
           />
         </div>
       </div>
@@ -35,7 +35,7 @@ function SamplePrevArrow(props) {
     <div className={styles.prevArrow} onClick={onClick}>
       <div className={styles.rocket}>
         <div className={styles.circleContainer}>
-          <img className={styles.circleImg} src="/images/circle.svg" alt="" />
+          <img className={styles.circleImg} src="/images/circle.svg" alt="circle" />
         </div>
         <div
           className={styles.rocketContainer + " " + styles.rocketContainerPrev}
@@ -43,7 +43,7 @@ function SamplePrevArrow(props) {
           <img
             className={styles.rocketImgPrev}
             src="/images/rocket.svg"
-            alt=""
+            alt="icon"
           />
         </div>
       </div>
@@ -81,23 +81,23 @@ const Fluensers = () => {
       </div>
       <Slider {...settings}>
         <div className={styles.containerImage}>
-          <img className={styles.image} src="/images/LotImage.png" alt="lot" />
+          <img className={styles.image} src="/images/LotImage.png" alt="person" />
         </div>
         <div className={styles.containerImage}>
           <img
             className={styles.image}
             src="/images/PersonBack.png"
-            alt="lot"
+            alt="person"
           />
         </div>
         <div className={styles.containerImage}>
-          <img className={styles.image} src="/images/LotImage.png" alt="lot" />
+          <img className={styles.image} src="/images/LotImage.png" alt="person" />
         </div>
         <div className={styles.containerImage}>
           <img
             className={styles.image}
             src="/images/PersonBack.png"
-            alt="lot"
+            alt="person"
           />
         </div>
       </Slider>

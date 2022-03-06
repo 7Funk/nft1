@@ -9,7 +9,7 @@ const Auction = () => {
 
   return (
     <Container className={styles.container}>
-      <img className={styles.bg} src="/images/smoke2.png" alt="" />
+      <img className={styles.bg} src="/images/smoke2.png" alt="background" />
       <h1 className={styles.heading}>Auction</h1>
       <div className={styles.lots}>
         {[0, 1, 2, 3, 4, 5, 6, 7].map(() => {
@@ -21,6 +21,12 @@ const Auction = () => {
             />
           );
         })}
+      </div>
+      <div className={styles.containerButton}>
+        <button className={styles.button}>
+          Show more
+          <img src="/images/rocketWhite.svg" alt="rocket" />
+        </button>
       </div>
       <LotModal isOpen={isOpenModal} onClose={() => setisOpenModal(false)} />
     </Container>

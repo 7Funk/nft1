@@ -7,7 +7,7 @@ import styles from "./Team.module.scss";
 const Team = () => {
   return (
     <Container id="team" className={styles.container}>
-      <img className={styles.bg} src="/images/smoke2.png" alt="" />
+      <img className={styles.bg} src="/images/smoke2.png" alt="background" />
       <div className={styles.teamContainer}>
         <h2 className={styles.topTeam}>Team</h2>
       </div>
@@ -28,12 +28,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/twitterHover.svg"
-                alt=""
+                alt="twitter"
               />
               <img
                 className={styles.iconPress}
                 src="/images/twitterPress.svg"
-                alt=""
+                alt="twitter"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -41,12 +41,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/instHover.svg"
-                alt=""
+                alt="inst"
               />
               <img
                 className={styles.iconPress}
                 src="/images/instPress.svg"
-                alt=""
+                alt="inst"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -54,12 +54,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/inHover.svg"
-                alt=""
+                alt="in"
               />
               <img
                 className={styles.iconPress}
                 src="/images/inPress.svg"
-                alt=""
+                alt="in"
               />
             </div>
           </div>
@@ -80,12 +80,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/twitterHover.svg"
-                alt=""
+                alt="twitter"
               />
               <img
                 className={styles.iconPress}
                 src="/images/twitterPress.svg"
-                alt=""
+                alt="twitter"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -93,12 +93,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/instHover.svg"
-                alt=""
+                alt="inst"
               />
               <img
                 className={styles.iconPress}
                 src="/images/instPress.svg"
-                alt=""
+                alt="inst"
               />
             </div>
           </div>
@@ -119,12 +119,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/twitterHover.svg"
-                alt=""
+                alt="twitter"
               />
               <img
                 className={styles.iconPress}
                 src="/images/twitterPress.svg"
-                alt=""
+                alt="twitter"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -132,12 +132,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/instHover.svg"
-                alt=""
+                alt="inst"
               />
               <img
                 className={styles.iconPress}
                 src="/images/instPress.svg"
-                alt=""
+                alt="inst"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -145,12 +145,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/inHover.svg"
-                alt=""
+                alt="in"
               />
               <img
                 className={styles.iconPress}
                 src="/images/inPress.svg"
-                alt=""
+                alt="in"
               />
             </div>
           </div>
@@ -167,12 +167,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/inHover.svg"
-                alt=""
+                alt="in"
               />
               <img
                 className={styles.iconPress}
                 src="/images/inPress.svg"
-                alt=""
+                alt="in"
               />
             </div>
           </div>
@@ -193,12 +193,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/twitterHover.svg"
-                alt=""
+                alt="twitter"
               />
               <img
                 className={styles.iconPress}
                 src="/images/twitterPress.svg"
-                alt=""
+                alt="twitter"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -206,12 +206,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/instHover.svg"
-                alt=""
+                alt="inst"
               />
               <img
                 className={styles.iconPress}
                 src="/images/instPress.svg"
-                alt=""
+                alt="inst"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -219,12 +219,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/inHover.svg"
-                alt=""
+                alt="in"
               />
               <img
                 className={styles.iconPress}
                 src="/images/inPress.svg"
-                alt=""
+                alt="in"
               />
             </div>
           </div>
@@ -245,12 +245,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/twitterHover.svg"
-                alt=""
+                alt="twitter"
               />
               <img
                 className={styles.iconPress}
                 src="/images/twitterPress.svg"
-                alt=""
+                alt="twitter"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -258,12 +258,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/instHover.svg"
-                alt=""
+                alt="inst"
               />
               <img
                 className={styles.iconPress}
                 src="/images/instPress.svg"
-                alt=""
+                alt="inst"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -271,12 +271,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/inHover.svg"
-                alt=""
+                alt="in"
               />
               <img
                 className={styles.iconPress}
                 src="/images/inPress.svg"
-                alt=""
+                alt="in"
               />
             </div>
           </div>
@@ -297,12 +297,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/twitterHover.svg"
-                alt=""
+                alt="twitter"
               />
               <img
                 className={styles.iconPress}
                 src="/images/twitterPress.svg"
-                alt=""
+                alt="twitter"
               />
             </div>
             <div className={styles.iconContainer}>
@@ -310,12 +310,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/instHover.svg"
-                alt=""
+                alt="inst"
               />
               <img
                 className={styles.iconPress}
                 src="/images/instPress.svg"
-                alt=""
+                alt="inst"
               />
             </div>
           </div>
@@ -332,12 +332,12 @@ const Team = () => {
               <img
                 className={styles.iconHover}
                 src="/images/inHover.svg"
-                alt=""
+                alt="in"
               />
               <img
                 className={styles.iconPress}
                 src="/images/inPress.svg"
-                alt=""
+                alt="in"
               />
             </div>
           </div>

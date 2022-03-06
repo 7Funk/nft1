@@ -63,55 +63,55 @@ const Footer = () => {
           </div>
           <div className={styles.icons}>
             <a className={styles.iconContainer} href="#">
-              <img className={styles.icon} src="/images/tg.svg" alt="" />
+              <img className={styles.icon} src="/images/tg.svg" alt="icon" />
               <img
                 className={styles.iconHover}
                 src="/images/tgHover.svg"
-                alt=""
+                alt="icon"
               />
               <img
                 className={styles.iconPress}
                 src="/images/tgPress.svg"
-                alt=""
+                alt="icon"
               />
             </a>
             <a className={styles.iconContainer} href="#">
-              <img className={styles.icon} src="/images/dc.svg" alt="" />
+              <img className={styles.icon} src="/images/dc.svg" alt="icon" />
               <img
                 className={styles.iconHover}
                 src="/images/dcHover.svg"
-                alt=""
+                alt="icon"
               />
               <img
                 className={styles.iconPress}
                 src="/images/dcPress.svg"
-                alt=""
+                alt="icon"
               />
             </a>
             <a className={styles.iconContainer} href="#">
-              <img className={styles.icon} src="/images/tw.svg" alt="" />
+              <img className={styles.icon} src="/images/tw.svg" alt="icon" />
               <img
                 className={styles.iconHover}
                 src="/images/twHover.svg"
-                alt=""
+                alt="icon"
               />
               <img
                 className={styles.iconPress}
                 src="/images/twPress.svg"
-                alt=""
+                alt="icon"
               />
             </a>
             <a className={styles.iconContainer} href="#">
-              <img className={styles.icon} src="/images/insta.svg" alt="" />
+              <img className={styles.icon} src="/images/insta.svg" alt="icon" />
               <img
                 className={styles.iconHover}
                 src="/images/instaHover.svg"
-                alt=""
+                alt="icon"
               />
               <img
                 className={styles.iconPress}
                 src="/images/instaPress.svg"
-                alt=""
+                alt="icon"
               />
             </a>
           </div>

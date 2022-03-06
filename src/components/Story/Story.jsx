@@ -11,7 +11,7 @@ const Story = () => {
           <h2 className={styles.topStory}>The story</h2>
         </div>
         <div className={styles.pena}>
-        <img className={styles.ship} src="images/ship.png" alt="" />
+        <img className={styles.ship} src="images/ship.png" alt="ship" />
         <p className={styles.textStory}>
           Meta-Fluencer is a female Influencer from the Metaverse world, a
           planet beyond the stars. She has traveled back from the future to 2022

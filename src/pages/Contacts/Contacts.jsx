@@ -14,7 +14,7 @@ const CustomTextField = styled(TextField)({
 const Contacts = () => {
   return (
     <Container className={styles.container}>
-      <img className={styles.bg} src="/images/smoke2.png" alt="" />
+      <img className={styles.bg} src="/images/smoke2.png" alt="background" />
       <h1 className={styles.heading}>Contact Us</h1>
       <div className={styles.textFields}>
         <div className={styles.textFieldContainer}>

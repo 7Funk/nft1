@@ -6,7 +6,7 @@ import styles from ".//Benefits.module.scss";
 const Benefits = () => {
   return (
     <Container className={styles.benefits} id="benefits">
-        <img className={styles.bg} src="/images/smoke2.png" alt="" />
+        <img className={styles.bg} src="/images/smoke2.png" alt="background" />
       <div className={styles.benefitsContainer}>
         <h2 className={styles.topBenefits}>Benefits</h2>
       </div>

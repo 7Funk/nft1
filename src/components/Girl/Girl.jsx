@@ -8,11 +8,11 @@ const Girl = () => {
   return (
     <Container className={styles.container}>
         <div className={styles.girlContainer}>
-            <img className={styles.girlImg} src="/images/shutterstock.png" alt="" />
+            <img className={styles.girlImg} src="/images/shutterstock.png" alt="girl" />
         </div>
         <div className={styles.rocket}>
             <div className={styles.rocketContainer}>
-            <img className={styles.rocketImg} src="/images/rocket.svg" alt="" />
+            <img className={styles.rocketImg} src="/images/rocket.svg" alt="rocket" />
             </div>
         </div>
     </Container>
