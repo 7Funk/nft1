@@ -13,32 +13,6 @@
   .questionContainer {
     position: relative;
 
-    .stickyBar {
-      top: 90px;
-      right: 0;
-      float: right;
-      margin-left: auto;
-      position: -webkit-sticky;
-      position: sticky;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      width: fit-content;
-      font-weight: bold;
-      
-      .stickyBarLink {
-        text-decoration: none;
-        margin-bottom: 20px;
-
-        &:hover {
-          @include gradientText90deg;
-        }
-        &:active {
-          color: $gradientPurple;
-        }
-      }
-    }
-
     .questions {
       max-width: 776px;
       width: 100%;
