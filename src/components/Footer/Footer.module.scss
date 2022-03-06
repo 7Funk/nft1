@@ -1,4 +1,5 @@
 @import "../../styles/mixins.scss";
+
 .footer {
   padding-top: 140px;
   padding-bottom: 80px;
@@ -35,14 +36,55 @@
     }
 
     .icons {
-      padding-top: 40px;
       display: flex;
       width: 50%;
       justify-content: space-between;
-
+      .iconContainer{
+      padding-top: 40px;
+      z-index: 1;
+      position: relative;
+      display: inline-block;
+      &:hover{
+        .icon{
+          visibility: hidden !important;
+        }
+        .iconHover{
+          visibility: visible !important;
+        }
+      }
+      &:active{
+        .iconPress{
+          visibility: visible !important;
+        }
+        .iconHover{
+          visibility: hidden !important;
+        }
+      }
       .icon {
         height: 16px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        visibility: visible;
       }
+      .iconHover{
+        height: 16px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        visibility: hidden;
+      }
+      .iconPress{
+        height: 16px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        visibility: hidden;
+      }
+    }
     }
   }
   .linkBlock {

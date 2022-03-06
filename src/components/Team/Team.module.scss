@@ -112,3 +112,25 @@
   }
 }
 }
+
+@media screen and (max-width: 1000px){
+  .teamWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    .iconContainer{
+      padding-bottom: 50px;
+    }
+  .teamCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+    .name{
+      text-align: center;
+      
+    }
+  }
+}
+}

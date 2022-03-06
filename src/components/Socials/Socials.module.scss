@@ -31,26 +31,26 @@
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
-    .iconContainer{
+    .iconContainer {
       z-index: 1;
       position: relative;
       display: inline-block;
       width: 50px;
       height: 48px;
       margin: 0 21.5px;
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           visibility: hidden !important;
         }
-        .iconHover{
+        .iconHover {
           visibility: visible !important;
         }
       }
-      &:active{
-        .iconPress{
+      &:active {
+        .iconPress {
           visibility: visible !important;
         }
-        .iconHover{
+        .iconHover {
           visibility: hidden !important;
         }
       }
@@ -62,14 +62,14 @@
         cursor: pointer;
         visibility: visible;
       }
-      .iconHover{
+      .iconHover {
         position: absolute;
         top: 0;
         left: 0;
         cursor: pointer;
         visibility: hidden;
       }
-      .iconPress{
+      .iconPress {
         position: absolute;
         top: 0;
         left: 0;
@@ -149,6 +149,50 @@
       }
       .rocketPinkImg {
         visibility: visible !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .socialsContainer {
+    text-align: center;
+  }
+  .pena {
+    .socialsImg {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      .iconContainer{
+       width: 50%;
+       box-sizing: border-box;
+       margin: 0;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 40px;
+       height: 48px;
+
+       .icon{
+         
+       }
+       img{
+         margin: 0 auto;
+         right: 0 !important;
+       }
+      }
+    }
+    .rrocket {
+      flex-direction: column !important;
+      align-items: center !important;
+      .rocket45{
+        height: 34px;
+        width: 34px;
+        padding-left: 0 !important;
+      }
+      .download {
+        text-align: center;
+        width: 100%;
       }
     }
   }

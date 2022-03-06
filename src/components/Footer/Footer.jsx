@@ -71,17 +71,25 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.icons}>
-            <a href="#">
-              <img className={styles.icon} src="/images/tg.svg" alt="" />
+            <a className={styles.iconContainer} href="#">
+            <img className={styles.icon} src="/images/tg.svg" alt="" />
+            <img className={styles.iconHover} src="/images/tgHover.svg" alt="" />
+            <img className={styles.iconPress} src="/images/tgPress.svg" alt="" />
             </a>
-            <a href="#">
-              <img className={styles.icon} src="/images/dc.svg" alt="" />
+            <a className={styles.iconContainer} href="#">
+            <img className={styles.icon} src="/images/dc.svg" alt="" />
+            <img className={styles.iconHover} src="/images/dcHover.svg" alt="" />
+            <img className={styles.iconPress} src="/images/dcPress.svg" alt="" />
             </a>
-            <a href="#">
-              <img className={styles.icon} src="/images/tw.svg" alt="" />
+            <a className={styles.iconContainer} href="#">
+            <img className={styles.icon} src="/images/tw.svg" alt="" />
+            <img className={styles.iconHover} src="/images/twHover.svg" alt="" />
+            <img className={styles.iconPress} src="/images/twPress.svg" alt="" />
             </a>
-            <a href="#">
-              <img className={styles.icon} src="/images/insta.svg" alt="" />
+            <a className={styles.iconContainer} href="#">
+            <img className={styles.icon} src="/images/insta.svg" alt="" />
+            <img className={styles.iconHover} src="/images/instaHover.svg" alt="" />
+            <img className={styles.iconPress} src="/images/instaPress.svg" alt="" />
             </a>
           </div>
         </div>

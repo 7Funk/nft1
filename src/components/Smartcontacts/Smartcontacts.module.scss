@@ -96,3 +96,17 @@
     }
   }
 }
+
+@media screen and (max-width: 1300px){
+  .contactCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    .contactCard{
+      margin-bottom: 40px;
+    }
+  }
+  .smartContainer{
+    text-align: center;
+  }
+}
