@@ -87,11 +87,12 @@
       text-align: center !important;
     }
     .ship{
-      height: 230px !important;
+      height: initial !important;
       bottom: 0 !important;
       top: initial !important;
       margin: 0 auto;
       right: initial !important;
-      
+      max-width: 100%;
+      width: 100%;
     }
 }

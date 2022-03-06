@@ -12,18 +12,18 @@
     line-height: 76px;
     margin-bottom: 40px;
   }
-  .textFieldContainer {
-    width: 30%;
-  }
+
   .textFields {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 40px;
-
-    .textField {
-      background-color: #c6c6c656;
-      width: 100%;
+    .textFieldContainer {
+      width: 30%;
+      .textField {
+        background-color: #c6c6c656;
+        width: 100%;
+      }
     }
   }
 
@@ -84,4 +84,30 @@
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    align-items: center;
+    .textFields {
+      flex-direction: column;
+      
+    }
+    .textFieldContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100% !important;
+      align-items: center;
+      .textField {
+        // background-color: #c6c6c656;
+        width: 100%;
+      }
+    }
+    .containerButton {
+      width: 100%;
+      .button {
+        width: 100%;
+      }
+    }
+  }
 }
+
+
