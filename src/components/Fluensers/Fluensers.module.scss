@@ -1,5 +1,6 @@
 .container {
-  max-width: 1700px;
+  
+  max-width: 1626px;
   position: relative;
   padding: 30px;
 
@@ -12,7 +13,7 @@
       font-style: bold;
       font-size: 60px;
       line-height: 100%;
-      padding-top: 124px;
+      // padding-top: 124px;
       padding-bottom: 40px;
       display: inline-block;
     }
@@ -24,10 +25,6 @@
     .image {
       height: 450px;
     }
-  }
-
-  .center {
-    // transform: scale(1.2)
   }
 
   .prevArrow {

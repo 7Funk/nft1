@@ -29,9 +29,9 @@
 
     .containerImg {
       flex-grow: 1;
-      // width: 760px;
       overflow: hidden;
-      border-radius: 40px;
+      border-radius: 52px;
+      height: fit-content;
       .ecoImg {
         width: 100%;
         transition: all 1s ease-out;

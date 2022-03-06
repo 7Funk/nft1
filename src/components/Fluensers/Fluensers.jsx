@@ -1,7 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
+
 import { Container } from "../Container";
 import styles from "./Fluensers.module.scss";
+
+import './Slider.scss'
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -49,7 +52,6 @@ function SamplePrevArrow(props) {
 
 const Fluensers = () => {
   const settings = {
-    className: styles.center,
     centerMode: true,
     dots: false,
     infinite: true,

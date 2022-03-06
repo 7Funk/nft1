@@ -6,8 +6,8 @@ const Main = () => {
   return (
     <div>
       <Girl />
-      <Fluensers />
       <Story />
+      <Fluensers />
       <Benefits />
       <Eco />
       <Team />
