@@ -2,8 +2,16 @@
   max-width: 1600px;
   padding: 0 48px;
   position: relative;
-  .girlImg {
+  .girlContainer{
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 70px;
+  .girlImg {
+    height: 100%;
+
+  }
   }
   .rocket {
     position: absolute;

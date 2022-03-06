@@ -77,4 +77,24 @@
       }
     }
   }
+  .burger{
+    display: none;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+    .burger{
+      display: block !important;
+    }
+    .link{
+      display: none;
+    }
+    .button{
+      display: none;
+    }
+    .headerClass{
+      width: 100vw;
+      height: 100vh;
+    }
 }

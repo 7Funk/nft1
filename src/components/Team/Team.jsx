@@ -6,7 +6,7 @@ import styles from "./Team.module.scss";
 
 const Team = () => {
   return (
-    <Container  id="team" className={styles.container}>
+    <Container id="team" className={styles.container}>
       <div className={styles.teamContainer}>
         <h2 className={styles.topTeam}>Team</h2>
       </div>
@@ -18,13 +18,37 @@ const Team = () => {
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img
-              className={styles.icon}
-              src="images/twitter.svg"
-              alt="twitter"
-            />
-            <img className={styles.icon} src="images/inst.svg" alt="inst" />
-            <img className={styles.icon} src="images/in.svg" alt="in" />
+            <div className={styles.iconContainer}>
+              <img
+                className={styles.icon}
+                src="images/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                className={styles.iconHover}
+                src="/images/twitterHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/twitterPress.svg" alt="" />
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/inst.svg" alt="inst" />
+              <img
+                className={styles.iconHover}
+                src="/images/instHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/instPress.svg" alt="" />
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/in.svg" alt="in" />
+              <img
+                className={styles.iconHover}
+                src="/images/inHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/inPress.svg" alt="" />
+            </div>
           </div>
         </div>
         <div className={styles.teamCardContainer}>
@@ -34,12 +58,28 @@ const Team = () => {
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img
-              className={styles.icon}
-              src="images/twitter.svg"
-              alt="twitter"
-            />
-            <img className={styles.icon} src="images/inst.svg" alt="inst" />
+            <div className={styles.iconContainer}>
+              <img
+                className={styles.icon}
+                src="images/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                className={styles.iconHover}
+                src="/images/twitterHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/twitterPress.svg" alt="" />
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/inst.svg" alt="inst" />
+              <img
+                className={styles.iconHover}
+                src="/images/instHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/instPress.svg" alt="" />              
+            </div>
           </div>
         </div>
         <div className={styles.teamCardContainer}>
@@ -49,13 +89,37 @@ const Team = () => {
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img
-              className={styles.icon}
-              src="images/twitter.svg"
-              alt="twitter"
-            />
-            <img className={styles.icon} src="images/inst.svg" alt="inst" />
-            <img className={styles.icon} src="images/in.svg" alt="in" />
+            <div className={styles.iconContainer}>
+              <img
+                className={styles.icon}
+                src="images/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                className={styles.iconHover}
+                src="/images/twitterHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/twitterPress.svg" alt="" />
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/inst.svg" alt="inst" />
+              <img
+                className={styles.iconHover}
+                src="/images/instHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/instPress.svg" alt="" />              
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/in.svg" alt="in" />
+              <img
+                className={styles.iconHover}
+                src="/images/inHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/inPress.svg" alt="" />              
+            </div>
           </div>
         </div>
         <div className={styles.teamCardContainer}>
@@ -65,7 +129,15 @@ const Team = () => {
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img className={styles.icon} src="images/in.svg" alt="in" />
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/in.svg" alt="in" />
+              <img
+                className={styles.iconHover}
+                src="/images/inHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/inPress.svg" alt="" />              
+            </div>
           </div>
         </div>
         <div className={styles.teamCardContainer}>
@@ -75,13 +147,37 @@ const Team = () => {
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img
-              className={styles.icon}
-              src="images/twitter.svg"
-              alt="twitter"
-            />
-            <img className={styles.icon} src="images/inst.svg" alt="inst" />
-            <img className={styles.icon} src="images/in.svg" alt="in" />
+            <div className={styles.iconContainer}>
+              <img
+                className={styles.icon}
+                src="images/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                className={styles.iconHover}
+                src="/images/twitterHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/twitterPress.svg" alt="" />
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/inst.svg" alt="inst" />
+              <img
+                className={styles.iconHover}
+                src="/images/instHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/instPress.svg" alt="" />              
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/in.svg" alt="in" />
+              <img
+                className={styles.iconHover}
+                src="/images/inHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/inPress.svg" alt="" />              
+            </div>
           </div>
         </div>
         <div className={styles.teamCardContainer}>
@@ -91,13 +187,37 @@ const Team = () => {
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img
-              className={styles.icon}
-              src="images/twitter.svg"
-              alt="twitter"
-            />
-            <img className={styles.icon} src="images/inst.svg" alt="inst" />
-            <img className={styles.icon} src="images/in.svg" alt="in" />
+            <div className={styles.iconContainer}>
+              <img
+                className={styles.icon}
+                src="images/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                className={styles.iconHover}
+                src="/images/twitterHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/twitterPress.svg" alt="" />              
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/inst.svg" alt="inst" />
+              <img
+                className={styles.iconHover}
+                src="/images/instHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/instPress.svg" alt="" />              
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/in.svg" alt="in" />
+              <img
+                className={styles.iconHover}
+                src="/images/inHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/inPress.svg" alt="" />              
+            </div>
           </div>
         </div>
         <div className={styles.teamCardContainer}>
@@ -107,12 +227,28 @@ const Team = () => {
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img
-              className={styles.icon}
-              src="images/twitter.svg"
-              alt="twitter"
-            />
-            <img className={styles.icon} src="images/inst.svg" alt="inst" />
+            <div className={styles.iconContainer}>
+              <img
+                className={styles.icon}
+                src="images/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                className={styles.iconHover}
+                src="/images/twitterHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/twitterPress.svg" alt="" />              
+            </div>
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/inst.svg" alt="inst" />
+              <img
+                className={styles.iconHover}
+                src="/images/instHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/instPress.svg" alt="" />              
+            </div>
           </div>
         </div>
         <div className={styles.teamCardContainer}>
@@ -122,7 +258,15 @@ const Team = () => {
           <h3 className={styles.fouder}>Founder</h3>
           <p className={styles.name}>Cevat Keskiner Cevat</p>
           <div className={styles.socialsContainar}>
-            <img className={styles.icon} src="images/in.svg" alt="in" />
+            <div className={styles.iconContainer}>
+              <img className={styles.icon} src="images/in.svg" alt="in" />
+              <img
+                className={styles.iconHover}
+                src="/images/inHover.svg"
+                alt=""
+              />
+              <img className={styles.iconPress} src="/images/inPress.svg" alt="" />              
+            </div>
           </div>
         </div>
       </div>

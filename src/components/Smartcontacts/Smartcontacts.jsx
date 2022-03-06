@@ -5,7 +5,7 @@ import styles from "./Smartcontacts.module.scss";
 
 const Smartcontacts = () => {
   return (
-    <Container id="whitepaper">
+    <Container >
       <div className={styles.smartContainer}>
         <h2 className={styles.topSmart}>ILONSI’s Smart Contracts</h2>
       </div>
