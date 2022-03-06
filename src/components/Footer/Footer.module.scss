@@ -5,9 +5,10 @@
   padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
-
+  flex-wrap: wrap;
 
   .footerBlock {
+    width: 50%;
     .heading {
       margin-bottom: 54px;
     }
@@ -40,10 +41,14 @@
       width: 50%;
       justify-content: space-between;
       .iconContainer{
-      padding-top: 40px;
-      z-index: 1;
-      position: relative;
-      display: inline-block;
+        width: 50%;
+        box-sizing: border-box;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        height: 48px;
+        position: relative;
       &:hover{
         .icon{
           visibility: hidden !important;
@@ -106,6 +111,43 @@
       }
       &:active {
         color: $gradientPurple;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+
+    .footerBlock{
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+      width: 100% !important;
+      .logo{
+        
+      }
+      .containerLinks{
+        flex-direction: column;
+        
+      }
+      .linkBlock{
+        align-items: center;
+        padding-right: 0 !important;
+        width: 100% !important;
+      }
+      .iconContainer{
+        margin-bottom: 80px !important;
+        .icon, .iconHover, .iconPress{
+          margin: 0 auto !important;
+          left: 0 !important;
+          right: 0 !important;
+          padding-top: 40px !important;
+        }
       }
     }
   }
