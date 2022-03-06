@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 import { Container } from "../Container";
 import styles from "./Fluensers.module.scss";
@@ -51,12 +52,24 @@ function SamplePrevArrow(props) {
 }
 
 const Fluensers = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3)
+  const {width} = useWindowSize()
+  useEffect(() => {
+    if (width < 1000) {
+      setSlidesToShow(1)
+    } else {
+      setSlidesToShow(3)
+    }
+    
+  }, [slidesToShow, width])
+  
+
   const settings = {
     centerMode: true,
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
