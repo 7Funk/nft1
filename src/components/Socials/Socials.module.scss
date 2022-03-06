@@ -29,8 +29,53 @@
   }
   .socialsImg {
     padding-bottom: 30px;
-    .icon {
-      padding: 0 21.5px;
+    display: flex;
+    justify-content: center;
+    .iconContainer{
+      z-index: 1;
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 48px;
+      margin: 0 21.5px;
+      &:hover{
+        .icon{
+          visibility: hidden !important;
+        }
+        .iconHover{
+          visibility: visible !important;
+        }
+      }
+      &:active{
+        .iconPress{
+          visibility: visible !important;
+        }
+        .iconHover{
+          visibility: hidden !important;
+        }
+      }
+
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        visibility: visible;
+      }
+      .iconHover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        visibility: hidden;
+      }
+      .iconPress{
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        visibility: hidden;
+      }
     }
   }
 

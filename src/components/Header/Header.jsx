@@ -1,10 +1,12 @@
-import styles from ".//Header.module.scss";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import styles from ".//Header.module.scss";
+
 const Header = () => {
+  const [headerClass, setHeaderClass] = useState("")
   return (
-    <header className={styles.header}>
+    <header className={styles.header + " " + headerClass}>
       <Link to="/" className={styles.link}>
         <img src="/images/headerLogo.svg" alt="logo" />
       </Link>
@@ -35,6 +37,9 @@ const Header = () => {
       <a className={styles.link} href="#whitepaper">
         Whitepaper
       </a>
+      <a className={styles.burger} onClick={()=>{setHeaderClass(styles.headerClass)}} href="#" id="menu">
+        <img src="/images/burger.svg" alt="" />
+        </a>
       <button className={styles.button}>CONNECT WALLET {">"}</button>
     </header>
   );

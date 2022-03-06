@@ -7,7 +7,7 @@ import styles from './Girl.module.scss'
 const Girl = () => {
   return (
     <Container className={styles.container}>
-        <div>
+        <div className={styles.girlContainer}>
             <img className={styles.girlImg} src="/images/shutterstock.png" alt="" />
         </div>
         <div className={styles.rocket}>

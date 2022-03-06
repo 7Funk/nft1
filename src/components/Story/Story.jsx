@@ -10,6 +10,7 @@ const Story = () => {
         <div className={styles.topStoryContainer}>
           <h2 className={styles.topStory}>The story</h2>
         </div>
+        <div className={styles.pena}>
         <img className={styles.ship} src="images/ship.png" alt="" />
         <p className={styles.textStory}>
           Meta-Fluencer is a female Influencer from the Metaverse world, a
@@ -28,7 +29,7 @@ const Story = () => {
           company, values equal rights, freedom and will always stand up against
           dark powers, regardless of what it costs them.
         </p>
-        
+        </div>
       </div>
     </Container>
   );
