@@ -1,11 +1,12 @@
 import { style } from "@mui/system";
 import React from "react";
+
 import { Container } from "..";
 import styles from "./Team.module.scss";
 
 const Team = () => {
   return (
-    <Container className={styles.container}>
+    <Container  id="team" className={styles.container}>
       <div className={styles.teamContainer}>
         <h2 className={styles.topTeam}>Team</h2>
       </div>
