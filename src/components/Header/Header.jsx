@@ -25,34 +25,34 @@ const Header = () => {
   };
   return (
     <header className={headerClass()}>
-      <Link to="/" className={styles.link}>
+      <Link onClick={() => {setIsHeaderOpen(false)}} to="/" className={styles.link}>
         <img src="/images/headerLogo.svg" alt="logo" />
       </Link>
-      <a className={styles.link} href="#story">
+      <a onClick={() => {setIsHeaderOpen(false)}} className={styles.link} href="#story">
         Story
       </a>
-      <a className={styles.link} href="#metaFluencer">
+      <a onClick={() => {setIsHeaderOpen(false)}} className={styles.link} href="#metaFluencer">
         The MetaFluencer`s
       </a>
-      <a className={styles.link} href="#benefits">
+      <a onClick={() => {setIsHeaderOpen(false)}} className={styles.link} href="#benefits">
         Benefits
       </a>
-      <a className={styles.link} href="#eco">
+      <a onClick={() => {setIsHeaderOpen(false)}} className={styles.link} href="#eco">
         Eco
       </a>
-      <a className={styles.link} href="#team">
+      <a onClick={() => {setIsHeaderOpen(false)}} className={styles.link} href="#team">
         Team
       </a>
-      <Link className={styles.link} to="/auction">
+      <Link onClick={() => {setIsHeaderOpen(false)}} className={styles.link} to="/auction">
         Auction
       </Link>
-      <Link className={styles.link} to="/contacts">
+      <Link onClick={() => {setIsHeaderOpen(false)}} className={styles.link} to="/contacts">
         Contacts
       </Link>
-      <Link className={styles.link} to="/faq">
+      <Link onClick={() => {setIsHeaderOpen(false)}} className={styles.link} to="/faq">
         FAQ
       </Link>
-      <a className={styles.link} href="#whitepaper">
+      <a onClick={() => {setIsHeaderOpen(false)}} className={styles.link} href="#whitepaper">
         Whitepaper
       </a>
       <button
