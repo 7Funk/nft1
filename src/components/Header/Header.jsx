@@ -1,8 +1,12 @@
 import styles from ".//Header.module.scss";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { ConnectModal } from "../ConnectModal";
 
 const Header = () => {
+
+  const [isOpenModal, setIsOpenModal] = useState(false)
+
   return (
     <header className={styles.header}>
       <Link to="/" className={styles.link}>
@@ -35,7 +39,8 @@ const Header = () => {
       <a className={styles.link} href="#whitepaper">
         Whitepaper
       </a>
-      <button className={styles.button}>CONNECT WALLET {">"}</button>
+      <button onClick={() => {setIsOpenModal(true)}} className={styles.button}>CONNECT WALLET {">"}</button>
+      <ConnectModal isOpen={isOpenModal} onClose={() => {setIsOpenModal(false)}} />
     </header>
   );
 };

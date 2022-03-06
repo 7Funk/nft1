@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .modal {
   position: relative;
   margin: 0 auto;
@@ -24,4 +26,85 @@
     margin: 0 auto;
     padding-top: 50px;
   }
+
+  .heading {
+    @include gradientText90deg;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 76px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .button {
+      padding: 20px 0;
+      margin: 0 auto 30px auto;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      width: 45%;
+      justify-content: center;
+      border-radius: 139px;
+      cursor: pointer;
+
+      .buttonText {
+        @include gradientText90deg;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+  .buttonConnect {
+    padding: 16px 48px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 50px;
+    background: $gradient90deg;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    border: none;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 72.38%;
+      bottom: 0%;
+      background: linear-gradient(98.01deg, #ff00e5 -1.14%, #7000ff 90.23%);
+      filter: blur(19px);
+      z-index: -1;
+    }
+
+    &:hover {
+      background: $gradientPink;
+    }
+    &:active {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+.paper {
+  border-radius: 60px !important;
 }
