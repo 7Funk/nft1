@@ -5,7 +5,7 @@ import styles from "./Eco.module.scss";
 
 const Eco = () => {
   return (
-    <Container>
+    <Container id="eco">
       <div className={styles.topEcoContainer}>
         <h2 className={styles.topEco}>Eco</h2>
       </div>

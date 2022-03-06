@@ -5,7 +5,7 @@ import styles from "./Team.module.scss";
 
 const Team = () => {
   return (
-    <Container>
+    <Container id="team">
       <div className={styles.teamContainer}>
         <h2 className={styles.topTeam}>Team</h2>
       </div>
