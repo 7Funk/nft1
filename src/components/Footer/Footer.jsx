@@ -49,13 +49,6 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <p className={styles.wishes}>
-            Meta-Fluencer will bring the light to the darkness and show us the
-            universe.
-          </p>
-          <p className={styles.rights}>
-            ©2022 Meta-Fluencer. All rights reserved.
-          </p>
         </div>
         <div className={styles.footerBlock}>
           <h3 className={styles.contact + " " + styles.heading}>Contact Us</h3>
@@ -93,6 +86,15 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className={styles.footerBlock}>
+          <p className={styles.wishes}>
+            Meta-Fluencer will bring the light to the darkness and show us the
+            universe.
+          </p>
+          <p className={styles.rights}>
+            ©2022 Meta-Fluencer. All rights reserved.
+          </p>
+          </div>
       </Container>
     </footer>
   );
