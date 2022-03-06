@@ -1,5 +1,6 @@
 import { Box, Dialog, DialogContent } from "@mui/material";
 import React, { useEffect, useState } from "react";
+
 import styles from "./ConnectModal.module.scss";
 
 function MainContext({ onClose, setContext }) {
