@@ -35,7 +35,7 @@
     bottom: -70px;
     left: 0;
     transform: translate(-50);
-    margin-left: 45%;
+    margin-left: calc(50% - 60px);
     z-index: 1;
     &:hover {
       .rocketContainerPrev {
@@ -58,7 +58,7 @@
     bottom: -70px;
     right: 0;
     transform: translate(-50);
-    margin-right: 45%;
+    margin-right: calc(50% - 60px);
     z-index: 1;
     &:hover {
       .rocketContainerNext {

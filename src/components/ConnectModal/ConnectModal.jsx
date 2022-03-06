@@ -1,6 +1,6 @@
 import { Box, Dialog, DialogContent } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import styles from "./LotModal.module.scss";
+import styles from "./ConnectModal.module.scss";
 
 function MainContext({ onClose, setContext }) {
   return (
@@ -12,6 +12,52 @@ function MainContext({ onClose, setContext }) {
           src="/images/Close.svg"
           alt="cross"
         />
+        <h3 className={styles.heading}>Connection</h3>
+        <p className={styles.subtitle}>
+          Pick a wallet to connect to Metafluencer
+        </p>
+        <div className={styles.actions}>
+          <button onClick={() => {setContext('connect')}} className={styles.button}>
+            <img src="/images/ShipIcon.svg" alt="ship" />
+            &nbsp;
+            <span className={styles.buttonText}>Founderrrrrr</span>
+          </button>
+          <button onClick={() => {setContext('connect')}} className={styles.button}>
+            <img src="/images/ShipIcon.svg" alt="ship" />
+            &nbsp;
+            <span className={styles.buttonText}>Founderrrrrr</span>
+          </button>
+          <button onClick={() => {setContext('connect')}} className={styles.button}>
+            <img src="/images/ShipIcon.svg" alt="ship" />
+            &nbsp;
+            <span className={styles.buttonText}>Founderrrrrr</span>
+          </button>
+          <button onClick={() => {setContext('connect')}} className={styles.button}>
+            <img src="/images/ShipIcon.svg" alt="ship" />
+            &nbsp;
+            <span className={styles.buttonText}>Founderrrrrr</span>
+          </button>
+          <button onClick={() => {setContext('connect')}} className={styles.button}>
+            <img src="/images/ShipIcon.svg" alt="ship" />
+            &nbsp;
+            <span className={styles.buttonText}>Founderrrrrr</span>
+          </button>
+          <button onClick={() => {setContext('connect')}} className={styles.button}>
+            <img src="/images/ShipIcon.svg" alt="ship" />
+            &nbsp;
+            <span className={styles.buttonText}>Founderrrrrr</span>
+          </button>
+          <button onClick={() => {setContext('connect')}} className={styles.button}>
+            <img src="/images/ShipIcon.svg" alt="ship" />
+            &nbsp;
+            <span className={styles.buttonText}>Founderrrrrr</span>
+          </button>
+          <button onClick={() => {setContext('connect')}} className={styles.button}>
+            <img src="/images/ShipIcon.svg" alt="ship" />
+            &nbsp;
+            <span className={styles.buttonText}>Founderrrrrr</span>
+          </button>
+        </div>
       </div>
     </Box>
   );
@@ -26,11 +72,17 @@ function ConnectContext({ onClose, setContext }) {
           src="/images/Close.svg"
           alt="cross"
         />
+        <h3 className={styles.heading}>Welcome!</h3>
+        <p className={styles.subtitle}>
+        Let’s begin with connecting your MetaMask
+        </p>
+        <button onClick={onClose} className={styles.buttonConnect}>
+          Connect
+        </button>
       </div>
     </Box>
   );
 }
-
 
 const switchContext = (context, setContext, onClose) => {
   switch (context) {
