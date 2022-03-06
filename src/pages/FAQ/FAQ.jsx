@@ -30,19 +30,17 @@ const FAQ = () => {
   return (
     <Container className={styles.page}>
       <h1 className={styles.heading}>FAQ</h1>
-      <div className={styles.questionContainer}>
-        <div className={styles.questions}>
-            {questions.map((el, i) => {
-              return (
-                <Question
-                  key={i}
-                  id={`question${i}`}
-                  question={el.question}
-                  answer={el.answer}
-                />
-              );
-            })}
-          </div>
+      <div className={styles.questions}>
+        {questions.map((el, i) => {
+          return (
+            <Question
+              key={i}
+              id={`question${i}`}
+              question={el.question}
+              answer={el.answer}
+            />
+          );
+        })}
       </div>
     </Container>
   );

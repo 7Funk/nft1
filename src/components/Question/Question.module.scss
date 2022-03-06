@@ -17,3 +17,14 @@
     line-height: 30px;
   }
 }
+
+@media screen and (max-width: 1200px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    .content{
+      text-align: center;
+    }
+  }
+}
