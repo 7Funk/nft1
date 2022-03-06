@@ -9,11 +9,9 @@ const Footer = () => {
     <footer>
       <Container className={styles.footer}>
         <div className={styles.footerBlock}>
-          <img
-            className={styles.logo + " " + styles.heading}
-            src="/images/headerLogo.svg"
-            alt="logo"
-          />
+          <Link to="/" className={styles.link}>
+            <img style={{margin: "10px 0 64px 0", }} src="/images/headerLogo.svg" alt="logo" />
+          </Link>
           <div className={styles.containerLinks}>
             <div className={styles.linkBlock}>
               <a className={styles.link} href="#story">
@@ -38,9 +36,9 @@ const Footer = () => {
               </Link>
             </div>
             <div className={styles.linkBlock}>
-              <a className={styles.link} href="#auction">
+              <Link className={styles.link} to="/auction">
                 Auction
-              </a>
+              </Link>
               <a className={styles.link} href="#whitepaper">
                 Whitepaper
               </a>
@@ -65,24 +63,56 @@ const Footer = () => {
           </div>
           <div className={styles.icons}>
             <a className={styles.iconContainer} href="#">
-            <img className={styles.icon} src="/images/tg.svg" alt="" />
-            <img className={styles.iconHover} src="/images/tgHover.svg" alt="" />
-            <img className={styles.iconPress} src="/images/tgPress.svg" alt="" />
+              <img className={styles.icon} src="/images/tg.svg" alt="" />
+              <img
+                className={styles.iconHover}
+                src="/images/tgHover.svg"
+                alt=""
+              />
+              <img
+                className={styles.iconPress}
+                src="/images/tgPress.svg"
+                alt=""
+              />
             </a>
             <a className={styles.iconContainer} href="#">
-            <img className={styles.icon} src="/images/dc.svg" alt="" />
-            <img className={styles.iconHover} src="/images/dcHover.svg" alt="" />
-            <img className={styles.iconPress} src="/images/dcPress.svg" alt="" />
+              <img className={styles.icon} src="/images/dc.svg" alt="" />
+              <img
+                className={styles.iconHover}
+                src="/images/dcHover.svg"
+                alt=""
+              />
+              <img
+                className={styles.iconPress}
+                src="/images/dcPress.svg"
+                alt=""
+              />
             </a>
             <a className={styles.iconContainer} href="#">
-            <img className={styles.icon} src="/images/tw.svg" alt="" />
-            <img className={styles.iconHover} src="/images/twHover.svg" alt="" />
-            <img className={styles.iconPress} src="/images/twPress.svg" alt="" />
+              <img className={styles.icon} src="/images/tw.svg" alt="" />
+              <img
+                className={styles.iconHover}
+                src="/images/twHover.svg"
+                alt=""
+              />
+              <img
+                className={styles.iconPress}
+                src="/images/twPress.svg"
+                alt=""
+              />
             </a>
             <a className={styles.iconContainer} href="#">
-            <img className={styles.icon} src="/images/insta.svg" alt="" />
-            <img className={styles.iconHover} src="/images/instaHover.svg" alt="" />
-            <img className={styles.iconPress} src="/images/instaPress.svg" alt="" />
+              <img className={styles.icon} src="/images/insta.svg" alt="" />
+              <img
+                className={styles.iconHover}
+                src="/images/instaHover.svg"
+                alt=""
+              />
+              <img
+                className={styles.iconPress}
+                src="/images/instaPress.svg"
+                alt=""
+              />
             </a>
           </div>
         </div>
@@ -94,7 +124,7 @@ const Footer = () => {
           <p className={styles.rights}>
             ©2022 Meta-Fluencer. All rights reserved.
           </p>
-          </div>
+        </div>
       </Container>
     </footer>
   );

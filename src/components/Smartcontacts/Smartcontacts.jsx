@@ -39,6 +39,7 @@ const Smartcontacts = () => {
           </div>
         </div>
       </div>
+
     </Container>
   );
 };
