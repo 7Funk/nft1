@@ -31,15 +31,6 @@ const FAQ = () => {
     <Container className={styles.page}>
       <h1 className={styles.heading}>FAQ</h1>
       <div className={styles.questionContainer}>
-        <div className={styles.stickyBar}>
-          {questions.map((el, i) => {
-            return (
-              <a className={styles.stickyBarLink} href={`#question${i}`}>
-                {el.question}
-              </a>
-            );
-          })}
-        </div>
         <div className={styles.questions}>
             {questions.map((el, i) => {
               return (
