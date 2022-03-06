@@ -1,12 +1,17 @@
 import { Box, Dialog, DialogContent } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./LotModal.module.scss";
 
-const LotModal = ({ isOpen, onClose }) => {
+function MainContext({ onClose, setContext }) {
   return (
-    <Dialog maxWidth='md' fullWidth scroll="body" open={isOpen} onClose={onClose}>
-      <Box className={styles.modal}>
-        <img onClick={onClose} className={styles.cross} src="/images/cross.svg" alt="lot" />
+    <Box className={styles.modal}>
+      <div className={styles.container}>
+        <img
+          onClick={onClose}
+          className={styles.cross}
+          src="/images/Close.svg"
+          alt="cross"
+        />
         <h3 className={styles.heading}>
           METAFLUENCER <br /> #0001
         </h3>
@@ -45,15 +50,156 @@ const LotModal = ({ isOpen, onClose }) => {
           </div>
         </div>
         <p className={styles.bids}>{"[ 20 bids ]"}</p>
-        <button className={styles.bidAmount}>Bid Amount</button>
+        <button
+          onClick={() => {
+            setContext("bid");
+          }}
+          className={styles.bidAmount}
+        >
+          Bid Amount
+        </button>
         <p className={styles.bidQuantity}>Bid 100 $ILONSI or more</p>
         <div className={styles.actions}>
-          <button className={styles.submit}>Subim BID</button>
+          <button
+            onClick={() => {
+              setContext("submit");
+            }}
+            className={styles.submit}
+          >
+            Subim BID
+          </button>
           <div className={styles.containerClose}>
-            <button className={styles.close}>You have BID</button>
+            <button onClick={onClose} className={styles.close}>
+              You have BID
+            </button>
           </div>
         </div>
-      </Box>
+      </div>
+    </Box>
+  );
+}
+
+const BidContext = ({ onClose, setContext }) => {
+  return (
+    <Box className={styles.containerBid}>
+      <div className={styles.actions}>
+        <img
+          onClick={() => {
+            setContext("main");
+          }}
+          className={styles.back}
+          src="/images/Back.svg"
+          alt="back"
+        />
+        <img
+          onClick={onClose}
+          className={styles.cross}
+          src="/images/Close.svg"
+          alt="cros"
+        />
+      </div>
+      <div className={styles.containerBid}>
+        <div className={styles.itemContainer}>
+          <div className={styles.icon}></div>
+          <p className={styles.name}>101 $ILONSI</p>
+          <p className={styles.by}>by</p>
+          <p className={styles.text}>1xdddc32226222</p>
+        </div>
+        <div className={styles.itemContainer}>
+          <div className={styles.icon}></div>
+          <p className={styles.name}>222 $ILONSI</p>
+          <p className={styles.by}>by</p>
+          <p className={styles.text}>1xdddc32226222</p>
+        </div>
+        <div className={styles.itemContainer}>
+          <div className={styles.icon}></div>
+          <p className={styles.name}>303 $ILONSI</p>
+          <p className={styles.by}>by</p>
+          <p className={styles.text}>1xdddc32226222</p>
+        </div>
+        <div className={styles.itemContainer}>
+          <div className={styles.icon}></div>
+          <p className={styles.name}>505 $ILONSI</p>
+          <p className={styles.by}>by</p>
+          <p className={styles.text}>1xdddc32226222</p>
+        </div>
+        <div className={styles.itemContainer}>
+          <div className={styles.icon}></div>
+          <p className={styles.name}>600 $ILONSI</p>
+          <p className={styles.by}>by</p>
+          <p className={styles.text}>1xdddc32226222</p>
+        </div>
+        <div className={styles.itemContainer}>
+          <div className={styles.icon}></div>
+          <p className={styles.name}>700 $ILONSI</p>
+          <p className={styles.by}>by</p>
+          <p className={styles.text}>1xdddc32226222</p>
+        </div>
+      </div>
+    </Box>
+  );
+};
+
+const SubmitContext = ({ onClose }) => {
+  return (
+    <Box className={styles.modal}>
+      
+      <img
+        onClick={onClose}
+        className={styles.cross}
+        src="/images/Close.svg"
+        alt="cros"
+      />
+      <div className={styles.containerSubmit}>
+        <h3 className={styles.heading}>100 $ILONSI</h3>
+        <div className={styles.containerImg}>
+          <img className={styles.img} src="/images/LotImage.png" alt="lot" />
+        </div>
+        <button
+            onClick={onClose}
+            className={styles.submit}
+          >
+            Subim BID
+          </button>
+      </div>
+    </Box>
+  );
+};
+
+const switchContext = (context, setContext, onClose) => {
+  switch (context) {
+    case "bid":
+      return <BidContext setContext={setContext} onClose={onClose} />;
+    case "submit":
+      return <SubmitContext onClose={onClose} setContext={setContext} />;
+    default:
+      return <MainContext onClose={onClose} setContext={setContext} />;
+  }
+};
+
+const LotModal = ({ isOpen, onClose }) => {
+  const [context, setContext] = useState("main");
+
+  useEffect(() => {
+    if (isOpen) {
+      setContext("main");
+    }
+  }, [isOpen]);
+
+  const classes = {
+    paper: styles.paper,
+  };
+
+  return (
+    <Dialog
+      classes={classes}
+      maxWidth="md"
+      fullWidth
+      scroll="body"
+      open={isOpen}
+      onClose={onClose}
+    >
+      {switchContext(context, setContext, onClose)}
     </Dialog>
   );
 };
