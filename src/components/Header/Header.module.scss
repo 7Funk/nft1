@@ -107,10 +107,12 @@
     flex-direction: column !important;
     justify-content: space-between !important;
     align-items: center !important;
-    position: relative !important;
+    // position: relative !important;
     padding: 90px 15px 50px 15px;
     box-sizing: border-box;
     top: 0;
+    background: #000;
+    // position: fixed;
 
     .cross {
       cursor: pointer;
