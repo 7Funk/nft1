@@ -69,9 +69,11 @@ function MainContext({ onClose, setContext }) {
             Subim BID
           </button>
           <div className={styles.containerClose}>
-            <button onClick={onClose} className={styles.close}>
-              You have BID
-            </button>
+            <div className={styles.containerClose2}>
+              <button onClick={onClose} className={styles.close}>
+                You have BID
+              </button>
+            </div>
           </div>
         </div>
       </div>

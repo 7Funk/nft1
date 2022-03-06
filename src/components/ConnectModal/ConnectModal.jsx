@@ -18,46 +18,102 @@ function MainContext({ onClose, setContext }) {
           Pick a wallet to connect to Metafluencer
         </p>
         <div className={styles.actions}>
-          <button onClick={() => {setContext('connect')}} className={styles.button}>
-            <img src="/images/ShipIcon.svg" alt="ship" />
-            &nbsp;
-            <span className={styles.buttonText}>Founderrrrrr</span>
-          </button>
-          <button onClick={() => {setContext('connect')}} className={styles.button}>
-            <img src="/images/ShipIcon.svg" alt="ship" />
-            &nbsp;
-            <span className={styles.buttonText}>Founderrrrrr</span>
-          </button>
-          <button onClick={() => {setContext('connect')}} className={styles.button}>
-            <img src="/images/ShipIcon.svg" alt="ship" />
-            &nbsp;
-            <span className={styles.buttonText}>Founderrrrrr</span>
-          </button>
-          <button onClick={() => {setContext('connect')}} className={styles.button}>
-            <img src="/images/ShipIcon.svg" alt="ship" />
-            &nbsp;
-            <span className={styles.buttonText}>Founderrrrrr</span>
-          </button>
-          <button onClick={() => {setContext('connect')}} className={styles.button}>
-            <img src="/images/ShipIcon.svg" alt="ship" />
-            &nbsp;
-            <span className={styles.buttonText}>Founderrrrrr</span>
-          </button>
-          <button onClick={() => {setContext('connect')}} className={styles.button}>
-            <img src="/images/ShipIcon.svg" alt="ship" />
-            &nbsp;
-            <span className={styles.buttonText}>Founderrrrrr</span>
-          </button>
-          <button onClick={() => {setContext('connect')}} className={styles.button}>
-            <img src="/images/ShipIcon.svg" alt="ship" />
-            &nbsp;
-            <span className={styles.buttonText}>Founderrrrrr</span>
-          </button>
-          <button onClick={() => {setContext('connect')}} className={styles.button}>
-            <img src="/images/ShipIcon.svg" alt="ship" />
-            &nbsp;
-            <span className={styles.buttonText}>Founderrrrrr</span>
-          </button>
+          <div
+            onClick={() => {
+              setContext("connect");
+            }}
+            className={styles.buttonContainer}
+          >
+            <button className={styles.buttonContainer2}>
+              <img src="/images/ShipIcon.svg" alt="ship" />
+              &nbsp;
+              <span className={styles.buttonText}>Founderrrrrr</span>
+            </button>
+          </div>
+          <div
+            onClick={() => {
+              setContext("connect");
+            }}
+            className={styles.buttonContainer}
+          >
+            <button className={styles.buttonContainer2}>
+              <img src="/images/ShipIcon.svg" alt="ship" />
+              &nbsp;
+              <span className={styles.buttonText}>Founderrrrrr</span>
+            </button>
+          </div>
+          <div
+            onClick={() => {
+              setContext("connect");
+            }}
+            className={styles.buttonContainer}
+          >
+            <button className={styles.buttonContainer2}>
+              <img src="/images/ShipIcon.svg" alt="ship" />
+              &nbsp;
+              <span className={styles.buttonText}>Founderrrrrr</span>
+            </button>
+          </div>
+          <div
+            onClick={() => {
+              setContext("connect");
+            }}
+            className={styles.buttonContainer}
+          >
+            <button className={styles.buttonContainer2}>
+              <img src="/images/ShipIcon.svg" alt="ship" />
+              &nbsp;
+              <span className={styles.buttonText}>Founderrrrrr</span>
+            </button>
+          </div>
+          <div
+            onClick={() => {
+              setContext("connect");
+            }}
+            className={styles.buttonContainer}
+          >
+            <button className={styles.buttonContainer2}>
+              <img src="/images/ShipIcon.svg" alt="ship" />
+              &nbsp;
+              <span className={styles.buttonText}>Founderrrrrr</span>
+            </button>
+          </div>
+          <div
+            onClick={() => {
+              setContext("connect");
+            }}
+            className={styles.buttonContainer}
+          >
+            <button className={styles.buttonContainer2}>
+              <img src="/images/ShipIcon.svg" alt="ship" />
+              &nbsp;
+              <span className={styles.buttonText}>Founderrrrrr</span>
+            </button>
+          </div>
+          <div
+            onClick={() => {
+              setContext("connect");
+            }}
+            className={styles.buttonContainer}
+          >
+            <button className={styles.buttonContainer2}>
+              <img src="/images/ShipIcon.svg" alt="ship" />
+              &nbsp;
+              <span className={styles.buttonText}>Founderrrrrr</span>
+            </button>
+          </div>
+          <div
+            onClick={() => {
+              setContext("connect");
+            }}
+            className={styles.buttonContainer}
+          >
+            <button className={styles.buttonContainer2}>
+              <img src="/images/ShipIcon.svg" alt="ship" />
+              &nbsp;
+              <span className={styles.buttonText}>Founderrrrrr</span>
+            </button>
+          </div>
         </div>
       </div>
     </Box>
@@ -75,7 +131,7 @@ function ConnectContext({ onClose, setContext }) {
         />
         <h3 className={styles.heading}>Welcome!</h3>
         <p className={styles.subtitle}>
-        Let’s begin with connecting your MetaMask
+          Let’s begin with connecting your MetaMask
         </p>
         <button onClick={onClose} className={styles.buttonConnect}>
           Connect

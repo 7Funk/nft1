@@ -181,17 +181,20 @@
         border-radius: 50px;
         margin-left: 20px;
 
-        .close {
-          padding: 16px 48px;
-          font-weight: 900;
-          font-size: 18px;
-          line-height: 24px;
+        .containerClose2 {
+          background: #fff;
           border-radius: 50px;
-          background: white;
-          color: black;
-          z-index: 1;
-          border: none;
-          cursor: pointer;
+          .close {
+            @include gradientText90deg;
+            padding: 16px 48px;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 24px;
+            border-radius: 50px;
+            z-index: 1;
+            border: none;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -416,8 +419,10 @@
 .paper {
   border-radius: 60px !important;
   // max-width: calc(100%-32px) !important;
-  max-width: calc(100% - 32px) !important;
-  width: calc(100% - 32px) !important;
-  margin-left: 16px !important;
-  margin-right: 16px !important;
+  @media screen and (max-width: 100px) {
+    max-width: calc(100% - 32px) !important;
+    width: calc(100% - 32px) !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
 }
