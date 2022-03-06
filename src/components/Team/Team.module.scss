@@ -3,6 +3,12 @@
 
 .container {
   max-width: 1500px;
+  .bg{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+  }
   .teamContainer {
     display: flex;
     justify-content: center;

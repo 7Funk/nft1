@@ -1,11 +1,12 @@
 .layout {
   background-color: #000;
-  background: url('../../../public/images/Bg_blur.png') repeat-y;
+  background: url('../../../public/images/bogdan.svg') repeat-y;
   background-size: cover;
   .content {
     padding: 120px 0;
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
   .footer{
     position: relative;

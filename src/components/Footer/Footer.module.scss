@@ -102,19 +102,9 @@
     &:nth-last-child(1) {
       padding-right: 0;
     }
-    .link {
-      margin-bottom: 20px;
-      text-decoration: none;
-
-      &:hover {
-        @include gradientText90deg;
-      }
-      &:active {
-        color: $gradientPurple;
-      }
-    }
   }
 }
+
 
 @media screen and (max-width: 1000px){
   
@@ -150,5 +140,16 @@
         }
       }
     }
+  }
+}
+.link {
+  text-decoration: none;
+  padding-bottom: 20px;
+
+  &:hover {
+    @include gradientText90deg;
+  }
+  &:active {
+    color: $gradientPurple;
   }
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import { useWindowSize } from "../../hooks/useWindowSize";
 
+import { useWindowSize } from "../../hooks/useWindowSize";
 import { Container } from "../Container";
 import styles from "./Fluensers.module.scss";
 

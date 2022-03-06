@@ -29,6 +29,7 @@ const questions = [
 const FAQ = () => {
   return (
     <Container className={styles.page}>
+      <img className={styles.bg} src="/images/smoke2.png" alt="" />
       <h1 className={styles.heading}>FAQ</h1>
       <div className={styles.questions}>
         {questions.map((el, i) => {
