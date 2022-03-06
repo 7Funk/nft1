@@ -101,39 +101,63 @@ const BidContext = ({ onClose, setContext }) => {
       <div className={styles.containerBid}>
         <div className={styles.itemContainer}>
           <div className={styles.icon}></div>
-          <p className={styles.name}>101 $ILONSI</p>
-          <p className={styles.by}>by</p>
-          <p className={styles.text}>1xdddc32226222</p>
+          <div className={styles.bidContent}>
+            <p className={styles.name}>101 $ILONSI</p>
+            <div className={styles.bidInfo}>
+              <p className={styles.by}>by</p>
+              <p className={styles.text}>1xdddc32226222</p>
+            </div>
+          </div>
         </div>
         <div className={styles.itemContainer}>
           <div className={styles.icon}></div>
-          <p className={styles.name}>222 $ILONSI</p>
-          <p className={styles.by}>by</p>
-          <p className={styles.text}>1xdddc32226222</p>
+          <div className={styles.bidContent}>
+            <p className={styles.name}>101 $ILONSI</p>
+            <div className={styles.bidInfo}>
+              <p className={styles.by}>by</p>
+              <p className={styles.text}>1xdddc32226222</p>
+            </div>
+          </div>
         </div>
         <div className={styles.itemContainer}>
           <div className={styles.icon}></div>
-          <p className={styles.name}>303 $ILONSI</p>
-          <p className={styles.by}>by</p>
-          <p className={styles.text}>1xdddc32226222</p>
+          <div className={styles.bidContent}>
+            <p className={styles.name}>101 $ILONSI</p>
+            <div className={styles.bidInfo}>
+              <p className={styles.by}>by</p>
+              <p className={styles.text}>1xdddc32226222</p>
+            </div>
+          </div>
         </div>
         <div className={styles.itemContainer}>
           <div className={styles.icon}></div>
-          <p className={styles.name}>505 $ILONSI</p>
-          <p className={styles.by}>by</p>
-          <p className={styles.text}>1xdddc32226222</p>
+          <div className={styles.bidContent}>
+            <p className={styles.name}>101 $ILONSI</p>
+            <div className={styles.bidInfo}>
+              <p className={styles.by}>by</p>
+              <p className={styles.text}>1xdddc32226222</p>
+            </div>
+          </div>
         </div>
         <div className={styles.itemContainer}>
           <div className={styles.icon}></div>
-          <p className={styles.name}>600 $ILONSI</p>
-          <p className={styles.by}>by</p>
-          <p className={styles.text}>1xdddc32226222</p>
+          <div className={styles.bidContent}>
+            <p className={styles.name}>101 $ILONSI</p>
+            <div className={styles.bidInfo}>
+              <p className={styles.by}>by</p>
+              <p className={styles.text}>1xdddc32226222</p>
+            </div>
+          </div>
         </div>
         <div className={styles.itemContainer}>
           <div className={styles.icon}></div>
-          <p className={styles.name}>700 $ILONSI</p>
-          <p className={styles.by}>by</p>
-          <p className={styles.text}>1xdddc32226222</p>
+          <div className={styles.bidContent}>
+            <p className={styles.name}>101 $ILONSI</p>
+            <div className={styles.bidInfo}>
+              <p className={styles.by}>by</p>
+              <p className={styles.text}>1xdddc32226222</p>
+            </div>
+          </div>
         </div>
       </div>
     </Box>
@@ -143,7 +167,6 @@ const BidContext = ({ onClose, setContext }) => {
 const SubmitContext = ({ onClose }) => {
   return (
     <Box className={styles.modal}>
-      
       <img
         onClick={onClose}
         className={styles.cross}
@@ -155,12 +178,9 @@ const SubmitContext = ({ onClose }) => {
         <div className={styles.containerImg}>
           <img className={styles.img} src="/images/LotImage.png" alt="lot" />
         </div>
-        <button
-            onClick={onClose}
-            className={styles.submit}
-          >
-            Subim BID
-          </button>
+        <button onClick={onClose} className={styles.submit}>
+          Subim BID
+        </button>
       </div>
     </Box>
   );

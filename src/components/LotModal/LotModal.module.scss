@@ -13,8 +13,9 @@
 
   .cross {
     position: absolute;
-    top: 53px;
-    right: 53px;
+    top: 23px;
+    right: 16px;
+    z-index: 1;
     cursor: pointer;
   }
 
@@ -29,8 +30,9 @@
 
     .cross {
       position: absolute;
-      top: 53px;
-      right: 53px;
+      top: 23px;
+      right: 16px;
+      z-index: 1;
       cursor: pointer;
     }
 
@@ -163,12 +165,13 @@
       font-size: 32px;
       line-height: 40px;
       margin-bottom: 40px;
+      text-align: center;
     }
 
     .actions {
       display: flex;
       justify-content: center;
-      
+
       .containerClose {
         background: $gradient90deg;
         padding: 3px 3px 3px 3px;
@@ -190,6 +193,47 @@
           border: none;
           cursor: pointer;
         }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .heading {
+      font-size: 32px !important;
+      line-height: 40px !important;
+    }
+    .timeContainer {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      .timeItem {
+        width: 25%;
+
+        .timeValue {
+          font-size: 32px !important;
+          line-height: 40px !important;
+        }
+        .timeType {
+          font-size: 18px !important;
+          line-height: 23px !important;
+        }
+      }
+    }
+    .description {
+      text-align: center;
+    }
+    .floorPriceContainer {
+      flex-direction: column;
+      text-align: center;
+      .floorPrice {
+        margin-bottom: 20px;
+      }
+    }
+    .actions {
+      flex-direction: column;
+      .submit {
+        margin-bottom: 20px !important;
+      }
+      .containerClose {
+        margin-left: 0 !important;
       }
     }
   }
@@ -242,26 +286,55 @@
       transform: rotate(45deg);
     }
 
-    .name {
-      @include gradientText180deg;
-      font-weight: 800;
-      font-size: 32px;
-      line-height: 40px;
-      margin-right: auto;
-    }
+    .bidContent {
+      display: flex;
+      justify-content: space-between;
+      width: calc(100% - 120px);
+      .name {
+        @include gradientText180deg;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        margin-right: auto;
+      }
 
-    .by {
-      font-size: 24px;
-      line-height: 30px;
-      color: gray;
-    }
+      .bidInfo {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        .by {
+          font-size: 24px;
+          line-height: 30px;
+          color: gray;
+        }
 
-    .text {
-      font-weight: 900;
-      font-size: 18px;
-      line-height: 24px;
-      color: #000;
-      margin-left: auto;
+        .text {
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 24px;
+          color: #000;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    .itemContainer {
+      justify-content: flex-start;
+      .icon {
+        margin-right: 20px !important;
+      }
+      .bidContent {
+        flex-direction: column;
+
+        .bidInfo {
+          justify-content: space-between;
+          width: auto !important;
+        }
+      }
     }
   }
 }
@@ -281,12 +354,17 @@
   .heading {
     @include gradientText90deg;
     margin: 10px 0 40px 0;
-
     font-weight: 800;
     font-size: 60px;
     line-height: 76px;
   }
-
+  @media screen and (max-width: 500px) {
+    .heading {
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
 }
 
 .containerImg {
@@ -335,4 +413,11 @@
   }
 }
 
-
+.paper {
+  border-radius: 60px !important;
+  // max-width: calc(100%-32px) !important;
+  max-width: calc(100% - 32px) !important;
+  width: calc(100% - 32px) !important;
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+}
