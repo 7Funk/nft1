@@ -1,15 +1,40 @@
 import styled from "@emotion/styled";
-import TextField from "@mui/material/TextField";
 import React from "react";
 
 import { Container } from "../../components";
 import styles from "./Contacts.module.scss";
 
-const CustomTextField = styled(TextField)({
-  "& label": {
-    color: "gray",
-  },
-});
+const customStyles = `
+  background-color: #c6c6c656;
+  width: 100%;
+  padding: 16px 42px;
+  border: double 1px transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(#100d10, #100d10),
+    linear-gradient(170deg, #fff 0%, #100d10 70%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #292629;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  &:focus {
+    background-image: linear-gradient(#100d10, #100d10),
+    linear-gradient(170deg, #fff 0%, #fff 100%);
+  }
+`;
+
+const StyledInput = styled("input")(() => customStyles);
+const StyledTextArea = styled("textarea")(() => customStyles);
 
 const Contacts = () => {
   return (
@@ -19,42 +44,36 @@ const Contacts = () => {
       <div className={styles.textFields}>
         <div className={styles.textFieldContainer}>
           <p className={styles.fieldLabel}>Your Name*</p>
-          <CustomTextField
+          <StyledInput
             className={styles.textField}
-            color="secondary"
-            label="Your Name"
-            variant="filled"
+            error={true}
+            placeholder="Your Name"
           />
         </div>
         <div className={styles.textFieldContainer}>
           <p className={styles.fieldLabel}>Phone Number*</p>
-          <CustomTextField
+          <StyledInput
             className={styles.textField}
-            color="secondary"
-            label="Phone Number"
-            variant="filled"
+            placeholder="Phone Number"
           />
         </div>
         <div className={styles.textFieldContainer}>
           <p className={styles.fieldLabel}>Email Address</p>
-          <CustomTextField
+          <StyledInput
             className={styles.textField}
-            color="secondary"
-            label="Email Address"
-            variant="filled"
+            placeholder="Email Address"
           />
         </div>
       </div>
-      <div style={{ width: "100%" }} className={styles.textFieldContainer}>
+      <div
+        style={{ width: "100%" }}
+        className={styles.textFieldContainer + " " + styles.textFieldError}
+      >
         <p className={styles.fieldLabel}>Your Message</p>
-        <CustomTextField
-          label="Your Message"
-          color="secondary"
-          variant="filled"
-          fullwidth
-          className={styles.textArea}
-          multiline
-          rows={6}
+        <StyledTextArea
+          style={{ minHeight: "400px", resize: "none", marginBottom: "40px" }}
+          placeholder="Your Message"
+          className={styles.textField}
         />
       </div>
       <div className={styles.containerButton}>

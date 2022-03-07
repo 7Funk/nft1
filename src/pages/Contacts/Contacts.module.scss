@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  .bg{
+  .bg {
     position: absolute;
     left: 0;
     z-index: -1;
@@ -24,13 +24,32 @@
     width: 100%;
     justify-content: space-between;
     margin-bottom: 40px;
-    .textFieldContainer {
-      width: 30%;
-      .textField {
-        background-color: #c6c6c656;
-        width: 100%;
-      }
+    
+  }
+  .textFieldContainer {
+    width: 30%;
+  }
+
+  .textFieldError {
+    .fieldLabel {
+      color: #FF0000 !important;
     }
+    .textField {
+      background-image: linear-gradient(#2b1f22, #2b1f22),
+        linear-gradient(170deg, #FF0000 0%, #2b1f22 70%);
+      color: #FF0000;
+
+      &::placeholder {
+        color: #FF000088;
+      }
+
+      &:focus {
+        background-image: linear-gradient(#2b1f22, #2b1f22),
+        linear-gradient(170deg, #FF0000 0%, #2b1f22 70%);
+      }
+
+    }
+    
   }
 
   .fieldLabel {
@@ -95,7 +114,6 @@
     align-items: center;
     .textFields {
       flex-direction: column;
-      
     }
     .textFieldContainer {
       display: flex;
@@ -115,5 +133,3 @@
     }
   }
 }
-
-

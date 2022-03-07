@@ -1,7 +1,7 @@
+import styles from ".//Benefits.module.scss";
 import React from "react";
 
 import { Container } from "..";
-import styles from ".//Benefits.module.scss";
 
 const Benefits = () => {
   return (
