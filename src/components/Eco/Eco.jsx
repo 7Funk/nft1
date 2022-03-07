@@ -71,7 +71,7 @@ const Eco = () => {
           </p>
         </div>
         <div className={styles.containerImg}>
-          <img className={styles.ecoImg} src="images/token.png" alt="icon" />
+          <img className={styles.ecoImg} src="images/token.gif" alt="icon" />
         </div>
       </div>
     </Container>

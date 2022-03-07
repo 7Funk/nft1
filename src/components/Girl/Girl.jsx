@@ -9,6 +9,7 @@ const Girl = () => {
     <Container className={styles.container}>
         <div className={styles.girlContainer}>
             <img className={styles.girlImg} src="/images/shutterstock.png" alt="girl" />
+            <img className={styles.girlImgM} src="/images/shutterstockM.png" alt="" />
         </div>
         <div className={styles.rocket}>
             <div className={styles.rocketContainer}>
