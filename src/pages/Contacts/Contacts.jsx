@@ -73,10 +73,7 @@ const Contacts = () => {
         <StyledTextArea
           style={{ minHeight: "400px", resize: "none", marginBottom: "40px" }}
           placeholder="Your Message"
-          fullwidth
           className={styles.textField}
-          multiline
-          rows={6}
         />
       </div>
       <div className={styles.containerButton}>
