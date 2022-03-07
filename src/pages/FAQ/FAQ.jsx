@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { Container, Header, Question } from "../../components";
+import { Container, Question } from "../../components";
 import styles from "./FAQ.module.scss";
 
 const questions = [
