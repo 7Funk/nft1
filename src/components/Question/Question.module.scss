@@ -23,6 +23,9 @@
     display: flex;
     flex-direction: column;
     align-items: center !important;
+    .heading{
+      text-align: center;
+    }
     .content{
       text-align: center;
     }
