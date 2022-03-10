@@ -13,7 +13,7 @@ function SampleNextArrow(props) {
     <div className={styles.nextArrow} onClick={onClick}>
       <div className={styles.rocket}>
         <div className={styles.circleContainer}>
-          <img className={styles.circleImg} src="/images/circle.svg" alt="circle" />
+          <img className={styles.circleImg} src="/images/Circle.svg" alt="circle" />
         </div>
         <div
           className={styles.rocketContainer + " " + styles.rocketContainerNext}
@@ -35,7 +35,7 @@ function SamplePrevArrow(props) {
     <div className={styles.prevArrow} onClick={onClick}>
       <div className={styles.rocket}>
         <div className={styles.circleContainer}>
-          <img className={styles.circleImg} src="/images/circle.svg" alt="circle" />
+          <img className={styles.circleImg} src="/images/Circle.svg" alt="circle" />
         </div>
         <div
           className={styles.rocketContainer + " " + styles.rocketContainerPrev}
