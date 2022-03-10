@@ -4,7 +4,7 @@ import React from "react";
 const AuctionLot = ({handleOpen}) => {
   return (
     <div className={styles.container}>
-      <img className={styles.lotImage} src="/images/LotImage.png" alt="lot" />
+      <img className={styles.lotImage} src="/images/lotImage.png" alt="lot" />
       <div className={styles.lotInfo}>
         <h6 className={styles.lotName}>
           Metafluencer <br /> #00001
