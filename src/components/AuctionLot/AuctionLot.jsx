@@ -1,5 +1,6 @@
-import styles from "./AuctionLot.module.scss";
 import React from "react";
+
+import styles from "./AuctionLot.module.scss";
 
 const AuctionLot = ({handleOpen}) => {
   return (

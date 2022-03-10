@@ -16,7 +16,7 @@ function MainContext({ onClose, setContext }) {
           METAFLUENCER <br /> #0001
         </h3>
         <div className={styles.containerImg}>
-          <img className={styles.img} src="/images/LotImage.png" alt="lot" />
+          <img className={styles.img} src="/images/lotImage.png" alt="lot" />
         </div>
         <div className={styles.timeContainer}>
           <div className={styles.timeItem}>
@@ -178,7 +178,7 @@ const SubmitContext = ({ onClose }) => {
       <div className={styles.containerSubmit}>
         <h3 className={styles.heading}>100 $ILONSI</h3>
         <div className={styles.containerImg}>
-          <img className={styles.img} src="/images/LotImage.png" alt="lot" />
+          <img className={styles.img} src="/images/lotImage.png" alt="lot" />
         </div>
         <button onClick={onClose} className={styles.submit}>
           Subim BID
