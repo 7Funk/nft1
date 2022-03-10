@@ -81,7 +81,7 @@ const Fluensers = () => {
       </div>
       <Slider {...settings}>
         <div className={styles.containerImage}>
-          <img className={styles.image} src="/images/LotImage.png" alt="person" />
+          <img className={styles.image} src="/images/lotImage.png" alt="person" />
         </div>
         <div className={styles.containerImage}>
           <img
@@ -91,7 +91,7 @@ const Fluensers = () => {
           />
         </div>
         <div className={styles.containerImage}>
-          <img className={styles.image} src="/images/LotImage.png" alt="person" />
+          <img className={styles.image} src="/images/lotImage.png" alt="person" />
         </div>
         <div className={styles.containerImage}>
           <img

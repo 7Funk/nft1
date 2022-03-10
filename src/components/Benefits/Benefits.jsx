@@ -1,7 +1,7 @@
-import styles from ".//Benefits.module.scss";
 import React from "react";
 
 import { Container } from "..";
+import styles from ".//Benefits.module.scss";
 
 const Benefits = () => {
   return (
@@ -14,7 +14,7 @@ const Benefits = () => {
         <div className={styles.card}>
           <img
             className={styles.imgBenefits}
-            src="/images/vector1.svg"
+            src="/images/Vector1.svg"
             alt="icon1"
           />
           <p className={styles.textBenefits}>
@@ -27,7 +27,7 @@ const Benefits = () => {
         <div className={styles.card}>
           <img
             className={styles.imgBenefits}
-            src="/images/vector4.svg"
+            src="/images/Vector4.svg"
             alt="icon3"
           />
           <p className={styles.textBenefits}>
@@ -39,7 +39,7 @@ const Benefits = () => {
         <div className={styles.card}>
           <img
             className={styles.imgBenefits}
-            src="/images/vector2.svg"
+            src="/images/Vector2.svg"
             alt="icon2"
           />
           <p className={styles.textBenefits}>
@@ -53,7 +53,7 @@ const Benefits = () => {
         <div className={styles.card}>
           <img
             className={styles.imgBenefits}
-            src="/images/vector5.svg"
+            src="/images/Vector5.svg"
             alt="shop"
           />
           <p className={styles.textBenefits}>
@@ -67,7 +67,7 @@ const Benefits = () => {
         <div className={styles.card}>
           <img
             className={styles.imgBenefits}
-            src="/images/vector3.svg"
+            src="/images/Vector3.svg"
             alt="party"
           />
           <p className={styles.textBenefits}>
@@ -79,7 +79,7 @@ const Benefits = () => {
         <div className={styles.card}>
           <img
             className={styles.imgBenefits}
-            src="/images/vector6.svg"
+            src="/images/Vector6.svg"
             alt="copyright"
           />
           <p className={styles.textBenefits}>
